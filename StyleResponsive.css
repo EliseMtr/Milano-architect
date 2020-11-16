@@ -1,0 +1,633 @@
+/*------------------------SMARTPHONE---------------------------------*/
+@media (max-width: 840px) {
+h1{
+        font-size: 38px;
+    }
+.Titre-header h2{
+        font-size: 32px;
+    }
+.hero-image-accueil h2{
+        font-size: 32px;
+    }
+    
+/*--------------------HEADER--------------------*/
+
+   .logo-milano2 {
+        margin-bottom: -20px;
+    }
+    .logo-milano {
+        margin-bottom: 110px;
+    }
+/*-------HERO-IMAGE-----*/
+    
+    .hero-image-rea-architecture {
+        filter: brightness(90%)
+    }
+    .hero-image-rea-design {
+        filter: brightness(85%)
+    }
+    .hero-image-agence{
+        filter: brightness(90%)
+    }
+
+/*-------------------FOOTER--------------------*/
+footer {
+        padding: 30px 60px;
+    }
+footer h4{
+        font-size: 12px;
+    }
+footer p{
+        font-size: 10px;
+        padding-top: 30px;
+    }
+header{
+        height: 100vh;
+    }
+    
+/*----------------NAVIGATION----------------*/
+
+      #menu li, .dropdown .dropbtn {
+        font-size: 14px;
+        padding-right: 15px; 
+    }
+    .dropdown {
+        padding-top: 5px;
+    }
+    .dropdown-content a {
+        font-size: 12px;
+        height: 28px;
+    }
+
+   #menuToggle
+{
+  display: block;
+  position: fixed;
+  bottom: -40px;
+  left: 20px;
+  width: 100%;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #ffff;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #bdac97;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 50px;
+  height: 4px;
+  margin-bottom: 10px;
+  position: relative;
+  
+  background: #dedddd;
+  border-radius: 1px;
+  
+    z-index: 1;}
+
+#menu
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: -100px 0 0 -20px;
+    padding: 20px 0px 60px 0px;
+  
+  background: #4c5949;
+    opacity: 70%;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  
+ transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transform: rotate(90deg);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
+}
+
+    ul #menu {
+        padding-right: 40px;
+    }
+    #menuToggle input:checked ~ ul{
+  transform: none;
+}
+
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+    .sticky + .texte {
+    padding-top: 60px;
+}
+    #menu li{
+         padding: 15px 0px;
+    }
+    #menu a, .dropdown .dropbtn {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'winterthurcondensedregular';
+    letter-spacing: 0.3em;
+    font-size: 20px;
+}
+
+    .dropdown .dropbtn{
+        padding-top: 0;
+        padding: 10px 0;
+    }
+    .dropdown {
+        padding-top: 0;
+    }
+    
+/*--------------------PRESTA------------------*/
+    
+    h2.double{
+        font-size:84px;
+    }
+    span.taille{
+        font-size: 56px;
+        margin-left: 110px;
+    }
+    .architecture h2{
+       line-height: 0.43;
+    }
+    .design-espace h2{
+        margin-left: 90px;
+        line-height: 0.43;
+    }
+    .texte-architecture{
+        margin: -24px 100px 0px -10px;
+        padding: 40px 40px 50px 40px;
+        border-width: 7px;
+    }
+    
+    .texte-design-espace{
+        margin: -24px 0px 0px 100px;
+        padding: 60px 40px 50px 40px;
+        border-width: 7px;
+    }
+    .architecture p, .design-espace p{
+        font-size: 24px;
+    }
+    .architecture h3, .design-espace h3{
+        font-size: 28px;
+        padding-left: 20px;
+    }
+    span .crea-meuble{
+        font-style: italic;
+        text-align: center;
+        font-size: 24px;
+    }
+/*---------------------REALISATIONS-----------------*/
+    
+/*---------------------L'AGENCE----------------------*/
+    .agence {
+        padding: 0 20px 0 20px;
+        
+    }
+    .agence p {
+        padding-bottom: 20px;
+        margin: 0 50px;
+        font-size: 24px;
+    }
+    #notre-agence{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .architecte,.designer, .MO{
+        margin: 20px 40px;
+        display: block;
+        justify-content: center;
+    }
+    .architecte .description, .designer .description, .MO .description{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+        margin: inherit;
+    }
+    .architecte img, .designer img, .MO img {
+        max-width: 400px;
+        height: auto;
+    }
+    
+    .architecte img:hover , .designer img:hover, .MO img:hover{
+        background-color: #fff;
+        opacity: 70%;
+    }
+    
+    .designer h3, .architecte h3, .MO h3 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .designer p, .architecte p, .MO p {
+        font-size: 22px;
+        text-align: center;
+    }
+    .designer .description .fab,.architecte .description .fab, .MO .description .fab {
+       padding: 20px 20px 40px 0;
+    }
+    .designer .description .fab:hover,.architecte .description .fab:hover, .MO .description .fab:hover{
+        color: #4c5949;
+    }
+.MO {
+    margin-bottom: 50px;
+    }
+/*----------------------CONTACT----------------------*/
+
+
+    .coordonnees {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0px 50px 0px;
+}
+
+    .formulaire{
+        margin-bottom: 50px;
+    }
+    
+    .coordonnees p {
+    padding: 20px 10px;
+}
+
+    .formulaire, .adresse {
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%
+}
+    .formulaire h2{
+        margin-top: 50px;
+        font-size: 26px;
+    }
+    .adresse h2{
+        margin: 0px 0 20px 0;
+        font-size: 26px;
+    }
+    form input {
+        margin-top: 20px;
+        width: 75%;
+    }
+    textarea, label{
+        font-family: 'Source sans Pro';
+        padding-left: 5px;
+        width: 75%;
+    }
+    .bouton_ok button {
+    background-color: #bdac97;
+    border-color: #bdac97;
+    border-style: solid;
+    border-radius: 7px;
+    width: 200px;
+    padding: 10px 0;
+    margin-top: 10px;
+    color: #ffff;
+    text-transform: uppercase;
+    font-family: 'winterthurcondensedregular';
+    letter-spacing: 0.3em;
+    }
+    .adresse iframe{
+        margin-top: 20px;
+        border-radius: inherit;
+        width: 70%
+    }
+/*---------------CARROUSEL----------------*/
+
+    .carrousel {
+		padding-top: 48px;
+	}
+
+	.carrousel .navSlider {
+		display: -webkit-flex; /* NEW */
+		display: flex;
+	}
+
+	.carrousel .breve__titre {
+		font-size: 38px;
+		letter-spacing: 3em;
+		font-weight: 400;
+		text-align: center;
+        padding-bottom: 30px;
+	}
+    .carrousel .breve__titre-espace{
+        font-size: 38px;
+		letter-spacing: 3em;
+		font-weight: 400;
+		text-align: center;
+        padding-bottom: 30px;
+    }
+
+	.carrousel .breve__chapo {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 10px;
+		line-height: 12px;
+		margin-bottom: 32px;
+        font-style: italic
+	}
+    	.carrousel .slider::before {
+		left: 0;
+		background: linear-gradient(to left, rgba(245, 240, 236,0) 0%,rgba(245, 240, 236,1) 90.25%);
+	}
+
+	.carrousel .slider::after {
+		right: 0;
+		background: linear-gradient(to right, rgba(245, 240, 236,0) 0%,rgba(245, 240, 236,1) 90.25%);
+	}
+}
+/*-----------------------------------------------------------
+@media (min-width: 840px) {
+	.carrousel {
+		padding-top: 48px;
+	}
+
+	.carrousel .navSlider {
+		display: -webkit-flex;
+		display: flex;
+	}
+
+	.carrousel .breve__titre {
+		font-size: 58px;
+		letter-spacing: 2.4px;
+		font-weight: 400;
+		text-align: center;
+        padding-bottom: 50px;
+	}
+    .carrousel .breve__titre-espace{
+        font-size: 58px;
+		letter-spacing: 2.4px;
+		font-weight: 400;
+		text-align: center;
+        padding-bottom: 50px;
+    }
+
+	.carrousel .breve__chapo {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 18px;
+		line-height: 26px;
+		margin-bottom: 32px;
+        font-style: italic
+	}
+ 
+}----*/
+
+/*------------------------------TABLETTE (MIN 1000)-------------------------*/
+
+@media (max-width: 1000px) {
+     .accueil h2{
+        font-size: 34px;
+    }
+    h1{
+        font-size: 48px;
+    }
+    
+.Titre-header h2{
+        font-size: 34px;
+    }
+.architecture p, .design-espace p{
+        font-size: 22px;
+    }
+/*-----------------AGENCE----------------*/
+
+	.carrousel .navSlider svg {
+			transition: transform 0.2s;
+			transition: transform 0.2s, -webkit-transform 0.2s;
+        
+	}
+	.carrousel .navSlider:hover svg {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+        cursor: pointer;}
+    
+}
+/*---------------------------TABLETTE (min 1300px)-------------------------*/
+@media (max-width: 1300px) {
+ 
+
+    .accueil h2{
+        font-size: 44px;
+    }
+    h1{
+        font-size: 48px;
+    }
+    .Titre-header h2{
+        font-size: 44px;
+    }
+    
+/*---------PORTRAITS---------*/
+     .architecte img, .designer img, .MO img {
+        max-width: 600px;
+        height: auto;
+    }
+    .architecte, .MO{
+        margin: 80px 40px 40px 50px;
+    }
+    .designer {
+        margin: 80px 50px 40px 40px;
+    }
+    
+/*----------------------NAVIGATION---------------------*/
+
+        #menu li, .dropdown .dropbtn {
+        font-size: 14px;
+        padding-right: 15px; 
+    }
+    .dropdown {
+        padding-top: 5px;
+    }
+    .dropdown-content a {
+        font-size: 12px;
+        height: 28px;
+    }
+
+   #menuToggle
+{
+  display: block;
+  position: fixed;
+  bottom: -40px;
+  left: 20px;
+  width: 100%;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #ffff;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #bdac97;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 50px;
+  height: 5px;
+  margin-bottom: 12px;
+  position: relative;
+  
+  background: #dedddd;
+  border-radius: 1px;
+  
+    z-index: 1;}
+
+#menu
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: -100px 0 0 -20px;
+    padding: 20px 0px 60px 0px;
+  
+  background: #4c5949;
+    opacity: 70%;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  
+ transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transform: rotate(90deg);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
+}
+
+    ul #menu {
+        padding-right: 40px;
+    }
+    #menuToggle input:checked ~ ul{
+  transform: none;
+}
+
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+    .sticky + .texte {
+    padding-top: 60px;
+}
+    #menu li{
+         padding: 15px 0px;
+    }
+    #menu a, .dropdown .dropbtn {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'winterthurcondensedregular';
+    letter-spacing: 0.3em;
+    font-size: 20px;
+}
+
+    .dropdown .dropbtn{
+        padding-top: 0;
+        padding: 10px 0;
+    }
+    .dropdown {
+        padding-top: 0;
+    }
+    
+/*------------------CARROUSEL----------------------*/
+    
+
+	.carrousel .navSlider {
+			width: 80px;
+			height: 80px;
+	}
+
+	.carrousel .slider {
+		padding-left: 0;
+	}
+
+	.carrousel .slider::before,
+	.carrousel .slider::after {
+		transition: opacity 0.2s;
+		z-index: 3;
+		position: absolute;
+		content: "";
+		top: 0;
+		bottom: 0;
+		width: 277px;
+		pointer-events: none;
+	}
+
+
+	.carrousel .overflowSlider .lien:last-child {
+		margin-right: 250px;
+	}
+
+	.carrousel .lien:hover .lien__titre {
+		transform: translateY(-5px);
+	}
+
+}
+/*--------------------PRESTA----------------------*/
+
+.architecture p, .design-espace p{
+        font-size: 22px;
+    }

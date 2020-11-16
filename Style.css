@@ -1,0 +1,1051 @@
+/*-------------------RESET-------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------------------FONTS-----------------------------*/
+@font-face {
+    font-family: 'rawengulksansregular';
+    src: url('Fonts/rawengulksans-094-webfont.woff2') format('woff2'),
+         url('Fonts/rawengulksans-094-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'winterthurcondensedregular';
+    src: url('Fonts/winterthurcondensed-webfont.woff2') format('woff2'),
+         url('Fonts/winterthurcondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*-------------------Base---------------------*/
+h2 {
+    font-family: 'rawengulksansregular';
+    letter-spacing: 0.5em;
+    font-size: 54px;
+    font-weight:300;
+    color: 2f2f2f;
+    text-align: center;
+    text-transform: uppercase;   
+    
+}
+
+h1 {
+    font-family: 'winterthurcondensedregular';
+    letter-spacing: 0.3em;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #2f2f2f;
+     text-align: center;
+    padding-top: 40px;  
+}
+
+
+h3 {
+    font-family: 'winterthurcondensedregular';
+    letter-spacing: 0.3em;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #2f2f2f;
+     text-align: center;
+    padding-top: 20px; 
+    
+}
+h4 {
+    font-family: 'winterthurcondensedregular';
+    letter-spacing: 0.3em;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: 2f2f2f;
+}
+
+p {
+    font-size: 18px;
+    color: 2f2f2f;
+    
+}
+
+
+/*-------------------Body--------------------*/
+
+body,html {
+    height: 100vh;
+    padding: 0;
+    margin:0;
+}
+/*------------------LOGO------------------*/
+
+.logo-milano-pro, .logo-milano-parti {
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+    margin-bottom: 105px;
+}
+.logo-milano {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -30px;
+    margin-right: 40px;
+}
+.logo-milano2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -30px;
+    margin-right: 40px;
+}
+
+.Titre-header {
+    display: block;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+/*--------------------MENU------------------*/
+
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  bottom: 0px;
+  left: 15px;
+  width: 100%;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #ffff;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #bdac97;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  margin-top: inherit;
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cbc5c5;
+  border-radius: 3px;
+  
+    z-index: 1; }
+  
+/*  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffff;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+} */
+
+#menu
+{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: center;
+  width: 100%;
+    margin: -100px 0 0 -20px;
+    padding: 0 40px 40px 200px;
+  padding-top: 40px;
+  
+  background: #4c5949;
+    opacity: 70%;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  font-size: 22px;
+text-transform: uppercase;
+    padding-right: 50px;
+}
+
+#menu .dropbtn {
+    display: flex;
+    align-content: center;
+}
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .texte {
+  padding-top: 60px;
+}
+
+#menu a {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'winterthurcondensedregular';
+    letter-spacing: 0.3em;
+}
+
+header .fab {
+    color: #fff;
+}
+.dropdown .dropbtn {
+    background-color: inherit;
+    color: #fff;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    font-family: 'winterthurcondensedregular';
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    padding: inherit;
+    height: 30px;
+    padding-right: 50px;
+}
+:focus {
+    outline: none;
+}
+
+button .dropdown{
+    position: relative;
+    display: inline-block;
+    border: inherit;
+}
+.dropbtn {
+    padding: inherit;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: inherit;
+    min-width: 200px;
+  z-index: 1;
+    
+}
+
+.dropdown-content a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+    font-size: 18px;
+justify-content: flex-start;
+    
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+flex-direction: row;
+    justify-content: flex-start;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: inherit;
+    color: #bdac97;
+}
+/*-----------------------------------------------ACCUEIL--------------------------------------------*/
+
+/*----------------------Fond---------------------*/
+.hero-image-accueil {
+    background-image: url(ImagesWeb/FondAccueilWeb.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    text-align: center;
+}
+
+.hero-image-accueil h2{
+    font-family: 'rawengulksansregular';
+    letter-spacing: 0.5em;
+    font-size: 54px;
+    font-weight:300;
+    color: #ffff;
+    text-transform: uppercase;   
+    
+}
+/*-------------------------------------------PRESTATIONS---------------------------------------------*/
+
+header {
+    height: 100%;
+}
+h2.double {
+    font-family: 'rawengulksansregular';
+    letter-spacing: 0.5em;
+    font-size: 100px;
+    margin-top: -120px;
+    font-weight:300;
+    color: 2f2f2f;
+    text-transform: uppercase; 
+    line-height: 0.5;
+}
+
+span.taille {
+    font-size: 72px;
+    margin-left: 150px;
+    line-height: none;
+    padding: 0px;
+    margin-top:-20px;
+    font-weight:300;
+    color: 2f2f2f;
+}
+.architecture, .design-espace {
+    margin-top: 300px;
+}
+
+/*-----------------------------PARTICULIER-------------------------------*/
+
+.hero-image-presta-particulier {
+    background-image: url(ImagesWeb/FondParticulierWeb.png);
+    height: 100vh;
+    opacity: 72%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presta-particulier h2 {
+    font-family: 'rawengulksansregular';
+    letter-spacing: 0.5em;
+    font-size: 54px;
+    margin-top: -120px;
+    font-weight:300;
+    color: #ffff;
+    text-transform: uppercase; 
+    line-height: 0.5;
+}
+
+.presta-particulier h1 {
+    color: #ffff;
+}
+/*----------------------------PROFESSIONNEL------------------------------*/
+
+.hero-image-presta-pro {
+    background-image: url(ImagesWeb/FondPrestaProWeb.png);
+    height: 100%;
+    opacity: 72%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro .texte-architecture{
+    border-color: #bdac97;
+}
+
+.pro .texte-design-espace{
+    border-color: #bdac97;
+}
+.hero-image-presta-pro h2 {
+    font-family: 'rawengulksansregular';
+    letter-spacing: 0.5em;
+    font-size: 54px;
+    margin-top: -120px;
+    font-weight:300;
+    color: #2f2f2f;
+    text-transform: uppercase; 
+    line-height: 0.5;
+}
+/*-----------------ARCHI-------------------*/
+
+.texte-architecture{
+    margin: -60px 500px 0px -20px;
+    padding: 100px 80px 100px 80px;
+    font-family: 'Source Sans Pro';
+    color: #2f2f2f;
+    text-align: justify;
+    border-color: #4c5949;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.architecture h2{
+    text-transform: uppercase;
+    line-height: 0.5;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.texte-architecture h3{
+    text-align: left;
+    margin-top: 20px;
+}
+/*----------------DESIGN--------------*/
+.design-espace {
+    margin-bottom: 200px;
+}
+.design-espace h2 {
+    margin-top: 200px;
+    line-height: 0.5;
+    text-align: right;
+    margin-right: 400px;
+}
+
+.design-espace h2 span{
+    text-align: end;
+    margin-right: -300px;   
+}
+.texte-design-espace{
+    margin: -60px 0px 200px 500px;
+    padding: 100px 80px 100px 80px;
+    font-family: 'Source Sans Pro';
+    color: #2f2f2f;
+    text-align: justify;
+    text-align: end;
+    border-color: #4c5949;
+    border-width: 10px;
+    border-style: solid;
+    border-right: none;
+}
+
+span .crea-meuble {
+    font-family: 'Open Source Sans';
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    padding: 60px 0px 0px 20px;
+}
+.texte-design-espace p{
+    margin-bottom: 40px;
+}
+/*---------------------------FOOTER-------------------------------*/
+
+footer {
+    padding: 40px 60px;
+    background-color: #bdac97;
+    text-align: center;
+}
+footer h4{
+    font-weight: 500;
+    padding-top: 20px;
+       font-size: 20px;
+    padding-top: 20px;
+}
+footer p{
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    padding-top: 40px;
+    font-size: 14px;   
+}
+
+/*---------------------------------------------REALISATIONS-------------------------------------------*/
+
+.hero-image-rea-architecture {
+    background-image: url(ImagesWeb/FondArchiReaWeb.png);
+    height: 100vh;
+    opacity: 82%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image-rea-design {
+    background-image: url(ImagesWeb/FondReaDesignWeb.png);
+    height: 100vh;
+    opacity: 82%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.realisations, .design-mobilier {
+    display: block;
+    justify-content: center;
+}
+
+.rea-archi, .mobilier-pro {
+    margin: 50px 0px;
+}
+
+.rea-design, .mobilier-particulier {
+    margin: 200px 0px;
+}
+
+.rea-architecture .dropdown-content a {
+    padding-right: 50px;
+}
+
+.carrousel {
+    display: block;
+    flex-direction: row;
+    align-items: content;
+	margin-left: auto;
+	margin-right: auto;
+	color: #2f2f2f;
+	background-color: #d0c8c0;
+	position: relative;
+    padding: 30px 0px;
+    z-index: 0;
+}
+
+	.carrousel .slider {
+		overflow-y: hidden;
+		position: relative;
+		padding-left: 16px;
+	}
+
+	.carrousel .sliderWrapper {
+		position: relative;
+		overflow-x: scroll;
+		text-align: center;
+		scroll-behavior: smooth;
+		padding-bottom: 20px;
+		margin-bottom: -20px; /*Visually remove the horizotal scrollBar */
+	}
+
+@media (prefers-reduced-motion: reduce) {
+	.carrousel .sliderWrapper {
+		scroll-behavior: auto;
+	}
+}
+
+.breve__titre {
+	font-size: 62px;
+	letter-spacing: 0.3em;
+	line-height: 28px;
+	color: #2f2f2f;
+	text-transform: uppercase;
+    margin: 50px 0;
+}
+.realisations .breve__chapo, .design-mobilier .breve__chapo {
+	font-size: 16px;
+	line-height: 22px;
+	max-width: 664px;
+	color: #2f2f2f;
+	padding: 80px 0px 40px 0px;
+    font-family: 'Source sans Pro';
+    font-style: italic;
+    text-align: center;
+    margin: auto;
+}
+
+.carrousel .listeLien {
+	border-left: none;
+	max-width: 1300px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: visible;
+	white-space: nowrap;
+	font-size: 0;
+	line-height: 0;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.realisations .carrousel .lien {
+	width: 250px;
+	padding-right: 20px;
+	margin-right: 0;
+	position: relative;
+	display: inline-block;
+	border-bottom: none;
+}
+.design-mobilier .carrousel .lien {
+    width: 500px;
+	padding-right: 20px;
+	margin-right: 0;
+	position: relative;
+	display: inline-block;
+	border-bottom: none;
+}
+	.carrousel .lien::after {
+		content: "";
+		position: absolute;
+		height: 163px;
+		bottom: 0;
+		left: 0;
+		right: 20px;
+		background-image: linear-gradient(180deg, rgba(18,17,22,0.00) 6%, #ffffff 86%);
+		z-index: 1;
+	}
+
+	.carrousel .lien__titre {
+		font-size: 20px;
+		letter-spacing: 0.4px;
+		line-height: 24px;
+		color: #2f2f2f;
+		font-family: 'winterthurcondensedregular';
+		position: absolute;
+		width: 82%;
+		bottom: 12px;
+		left: 12px;
+		right: 32px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		white-space: normal;
+		z-index: 2;
+		max-width: 100%;
+		transition: transform 0.2s;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.carrousel .lien img {
+		display: block;
+		max-width: 100%;
+        z-index: 1;
+	}
+.sliderMarks {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.sliderMarks div {
+	display: inline-block;
+	vertical-align: top;
+	width: 10px;
+	height: 10px;
+	margin-right: 8px;
+	border-radius: 50%;
+	border: 1px solid #bdac97;
+}
+	.sliderMarks div.active {
+		background-color: #bdac97;
+	}
+
+
+
+
+	/*
+		
+		nav-slider
+
+	*/
+	.navSlider {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		padding-top: 10px;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		
+		align-items: center;
+		z-index: 4;
+	}
+		.carrousel .navSliderLeft {left: 0;}
+		.carrousel .navSliderRight {right: 0;}
+
+		.carrousel .slider.leftLocked .navSliderLeft,
+		.carrousel .slider.leftLocked::before,
+		.carrousel .slider.rightLocked .navSliderRight,
+		.carrousel .slider.rightLocked::after{
+			pointer-events: none;
+			opacity: 0;
+		}
+
+		.carrousel .navSlider svg {
+			width: 16px;
+			height: 27px;
+			margin-left: auto;
+			display: block;
+			margin-right: auto;
+            cursor: pointer;
+		}
+
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+/*-----------------------------------------------L'AGENCE-----------------------------------------------*/
+
+.hero-image-agence {
+    background-image: url(ImagesWeb/FondagenceWeb.png);
+    height: 100vh;
+    opacity: 82%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.designer p, .architecte p, .MO p, .agence p {
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+}
+
+.notre-agence h3{
+    font-weight: 500;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+/*---------------------------------MAIN----------------------------------*/
+.agence h2{
+    font-size: 48px;
+    font-family: 'winterthurcondensedregular';
+    text-transform: uppercase;
+    margin: 200px 100px 50px 100px;  
+}
+
+.agence {
+    height: 30%;
+    padding: 0px 200px 0px 200px;
+    text-align: center;
+}
+.agence span {
+    font-style: italic;
+    line-height: 200%;
+}
+
+.agence p {
+    font-size: 24px;
+    padding-bottom: 100px;
+    font-weight: 300;
+}
+/*--------------------------PROFILS------------------------*/
+
+.architecte i, .designer i, .MO i{
+    color: #bdac97;
+    font-size: 36px;
+    padding: 10px 20px 20px 10px;
+}
+.architecte i:hover, .designer i:hover, .MO i:hover {
+    color: #2f2f2f;
+}
+.architecte h3{
+    font-weight: 500;
+}
+/*-----ARCHITECTE-----*/
+
+.architecte .description {
+    display: block;
+    margin-right: 80px;
+    text-align: end;
+    padding-top: 200px;
+}
+
+.architecte {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 80px 40px 40px 200px;
+}
+
+.architecte img{
+   max-width: 50%;
+    height: auto;
+}
+
+.architecte h3 {
+    text-align: end;
+    margin-bottom: 30px;
+}
+
+.architecte p {
+    text-align: end;
+}
+
+
+/*---DESIGNER---*/
+.designer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 80px 200px 40px 40px;
+}
+
+.designer .description {
+    margin-left: 80px;
+    text-align: start;
+    display: block;
+    padding-top: 200px;
+}
+.designer img{
+    max-width: 50%;
+    height: auto;
+}
+
+.designer h3 {
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.designer p {
+    text-align: start;
+}
+
+/*---MAITRE D'OEUVRE---*/
+
+.MO .description {
+    display: block;
+    margin-right: 80px;
+    text-align: end;
+    padding-top: 200px;
+}
+
+.MO {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 80px 40px 200px 200px;
+}
+
+.MO img{
+    max-width: 50%;
+    height: auto;
+}
+
+.MO h3 {
+    text-align: end;
+    margin-bottom: 30px;
+}
+
+.MO p {
+    text-align: end;
+}
+
+.MO i :hover {
+    color: #2f2f2f;
+}
+
+/*------------------------------------------CONTACT--------------------------------------------*/
+
+.hero-image-contact {
+    background-image: url(ImagesWeb/Fondcontact.png);
+    height: 100vh;
+    opacity: 82%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coordonnees h2 {
+    font-size: 38px;
+    font-family: 'winterthurcondensedregular';
+    color: #bdac97;
+}
+
+.contact h1{
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #ffff; 
+    font-family: 'winterthurcondensedregular'
+}
+
+.contact h2{
+color: #ffff;
+}
+/*---------------------------------FORMULAIRE-------------------------------*/
+
+.coordonnees {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    text-align: center;
+    margin: 300px 0px 150px 0px;
+}
+
+.coordonnees p {
+    font-family: 'winterthurcondensedregular';
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.formulaire {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%
+}
+
+.categorie{
+    display: block;
+    align-content: space-around;  
+}
+
+input {
+    border: #bdac97;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 400px;
+}
+
+textarea {
+    margin-top: 20px;
+    border: #bdac97;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 150px 0px;
+    width: 400px;
+    font-family: 'Source sans Pro';
+}
+
+.formulaire p {
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+#recadrage {
+    margin top: 20px;
+}
+
+.bouton_ok button {
+    background-color: #bdac97;
+    border-color: #bdac97;
+    border-style: solid;
+    border-radius: 7px;
+    width: 200px;
+    padding: 10px 0;
+    margin-top: 10px;
+    color: #ffff;
+}
+/*-----------------------------------ADRESSE-------------------------------------*/
+
+iframe {
+    margin-top: 100px;
+    width: 450px;
+}
+.adresse p{
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.adresse {
+    display: block;
+    justify-content: center;
+    width: 50%
+}
+.adresse h2 {
+    padding-top: 40px;
+}
+

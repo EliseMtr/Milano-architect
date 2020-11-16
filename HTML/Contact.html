@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang=fr>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-sclae=1">
+    <link rel="stylesheet" href="../Style.css">
+    <link rel="stylesheet" media="screen and (max-width: 840px)" href="../StyleResponsive.css" type="text/css"/>
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="../StyleResponsive.css" type="text/css"/>
+    <link rel="stylesheet" media="screen and (max-width: 1300px)" href="../StyleResponsive.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/2e822c4fda.js" crossorigin="anonymous"></script>
+    <title>Milano I Pour nous contacter... </title>
+</head>
+
+<Body>
+    <header class="contact">
+        <div class="hero-image-contact">
+            <div class="Titre-header">
+                <div class="logo-milano">
+                    <img src="../ImagesWeb/LogoBlanc"></div>
+                <h2>Architecture & Design</h2>
+                <h1>Contact</h1>
+            </div>
+        </div>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input id="burger" type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            
+                <ul id="menu">
+                        <li><a href="../index.html">Accueil</a></li>
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">Prestations</button>
+                            <div class="dropdown-content">
+                   <li> <a href="PrestationsParticulier.html">Particulier </a></li>
+                    <li><a href="PrestationsPro.html">Professionnel</a></li>
+                            </div>
+                    </div>
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">Réalisations</button>
+                      <div class="dropdown-content">
+                   <li> <a href="RealisationsArchi.html">Architecture</a></li> 
+                    <li><a href="RealisationsDesign.html">Design</a></li>
+                            </div>
+                    </div>
+                
+                    <li><a href="L'agence.html">L'agence</a></li>
+                     <li><a href="Contact.html">Contact</a></li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin-in"></i></li>
+                </ul>
+               
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="coordonnees">
+            <div class="formulaire">
+                <h2>Nous contacter</h2>
+                <p>Pour tout renseignement, vous pouvez nous contacter au 02 40 84 62 28.<br> Pour un projet, veuillez remplir le formulaire.</p>
+                <form action="contact" method="post">
+                        <input type="text" id="name" name="user_name" required placeholder="Votre nom">
+                        <input type="text" id="societe" name="user_society" required placeholder="Votre société">
+                        <input type="text" id="telephone" name="user_phone" required placeholder="Votre numéro de téléphone">
+                    <textarea id="message" name="user_message" value="Votre message" required placeholder=" Votre message"></textarea>
+                </form>
+                <div class="bouton_ok">
+                        <button type="submit">Envoyer</button>
+                    </div>
+            </div>
+            <div class="adresse">
+                <h2>Où nous trouver?</h2>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.550570489029!2d-1.619723184137348!3d47.24493632088414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ed1c4f8717ff%3A0xba2c334837bf43ef!2s26%20Rue%20du%20Danube%2C%2044800%20Saint-Herblain!5e0!3m2!1sfr!2sfr!4v1603986521243!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <p>26 rue du Danube <br> 44800 Saint-Herblain <br> Ouvert du lundi au vendredi de 9h à 18h</p>
+            </div>
+        </div>
+    </main>
+    
+      <!-----------------------------FOOTER--------------------------------->
+    <footer>
+            <h4>N’hésitez pas à nous contacter pour toutes demandes d’information et devis.</h4>
+            <p>Copyright 2020 - Milano.</p>
+    </footer>
+    
+</Body>
+
+</html>

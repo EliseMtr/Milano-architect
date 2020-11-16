@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang=fr>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-sclae=1">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" media="screen and (max-width: 840px)" href="StyleResponsive.css" type="text/css"/>
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="StyleResponsive.css" type="text/css"/>
+<link rel="stylesheet" media="screen and (max-width: 1300px)" href="StyleResponsive.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/2e822c4fda.js" crossorigin="anonymous"></script>
+    <title>Milano I Architecture & Design</title>
+</head>
+
+<!-----------------------BODY---------------------->
+
+<Body>
+    <header class=accueil>
+        <div class="hero-image-accueil">
+            <div class="Titre-header">
+                <div class="logo-milano2">
+                    <img src="ImagesWeb/LogoBlanc"></div>
+                <h2>Architecture & Design</h2>
+            </div>
+        </div>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                
+            <ul id="menu">
+                        <li><a href="index.html">Accueil</a></li>
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">Prestations</button>
+                            <div class="dropdown-content">
+                   <li> <a href="HTML/PrestationsParticulier.html">Particulier </a></li>
+                    <li><a href="HTML/PrestationsPro.html">Professionnel</a></li>
+                            </div>
+                    </div>
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">Réalisations</button>
+                      <div class="dropdown-content">
+                   <li> <a href="HTML/RealisationsArchi.html">Architecture</a></li> 
+                    <li><a href="HTML/RealisationsDesign.html">Design</a></li>
+                            </div>
+                    </div>
+                
+                    <li><a href="HTML/L'agence.html">L'agence</a></li>
+                     <li><a href="HTML/Contact.html">Contact</a></li>
+                    <li class="reseaux"><i class="fab fa-facebook-f"></i></li>
+                <li class="reseaux"><i class="fab fa-instagram"></i></li>
+                <li class="reseaux"><i class="fab fa-linkedin-in"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <script type="text/javascript">
+    windox.addEventListener("scroll", function(){
+        var menu = document.querySelector("menu");
+        menu.classList.toggle("sticky", window.scrollY > 0)
+    })
+    </script>
+</Body></html>
