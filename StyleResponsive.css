@@ -132,7 +132,6 @@ header{
   
  transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  transform: rotate(90deg);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
 }
 
@@ -410,9 +409,9 @@ header{
  
 }----*/
 
-/*------------------------------TABLETTE (MIN 1000)-------------------------*/
+/*------------------------------TABLETTE (MIN 841px)-------------------------*/
 
-/*@media (max-width: 1000px) {
+@media screen and (min-width: 841px) and (max-width: 999px) {
      .accueil h2{
         font-size: 34px;
     }
@@ -425,47 +424,10 @@ header{
     }
 .architecture p, .design-espace p{
         font-size: 22px;
-    }*/
-/*-----------------AGENCE----------------*/
+    }
+/*----------NAVIGATION----------*/
 
-/*	.carrousel .navSlider svg {
-			transition: transform 0.2s;
-			transition: transform 0.2s, -webkit-transform 0.2s;
-        
-	}
-	.carrousel .navSlider:hover svg {
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-        cursor: pointer;}
-    
-}*/
-/*---------------------------TABLETTE (min 1300px)-------------------------*/
-/*----
-@media (max-width: 1300px) {
- 
-    .accueil h2{
-        font-size: 44px;
-    }
-    h1{
-        font-size: 48px;
-    }
-    .Titre-header h2{
-        font-size: 44px;
-    }
-    
-     .architecte img, .designer img, .MO img {
-        max-width: 600px;
-        height: auto;
-    }
-    .architecte, .MO{
-        margin: 80px 40px 40px 50px;
-    }
-    .designer {
-        margin: 80px 50px 40px 40px;
-    }
-    
-
-        #menu li, .dropdown .dropbtn {
+       #menu li, .dropdown .dropbtn {
         font-size: 14px;
         padding-right: 15px; 
     }
@@ -522,8 +484,8 @@ header{
 {
   display: block;
   width: 50px;
-  height: 5px;
-  margin-bottom: 12px;
+  height: 4px;
+  margin-bottom: 10px;
   position: relative;
   
   background: #dedddd;
@@ -550,7 +512,167 @@ header{
   
  transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  transform: rotate(90deg);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
+}
+
+    ul #menu {
+        padding-right: 40px;
+    }
+    #menuToggle input:checked ~ ul{
+  transform: none;
+}
+
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+    .sticky + .texte {
+    padding-top: 60px;
+}
+    #menu li{
+         padding: 15px 0px;
+    }
+    #menu a, .dropdown .dropbtn {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'winterthurcondensedregular';
+    letter-spacing: 0.3em;
+    font-size: 20px;
+}
+
+    .dropdown .dropbtn{
+        padding-top: 0;
+        padding: 10px 0;
+    }
+    .dropdown {
+        padding-top: 0;
+    }
+/*-----------------AGENCE----------------*/
+
+    .carrousel .navSlider svg {
+			transition: transform 0.2s;
+			transition: transform 0.2s, -webkit-transform 0.2s;
+        
+	}
+	.carrousel .navSlider:hover svg {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+        cursor: pointer;}
+    
+}
+/*---------------------------TABLETTE (min 1300px)-------------------------*/
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+ 
+/*-----------BASE-----------*/
+    .accueil h2{
+        font-size: 44px;
+    }
+    h1{
+        font-size: 48px;
+    }
+    .Titre-header h2{
+        font-size: 44px;
+    }
+    
+     .architecte img, .designer img, .MO img {
+        max-width: 600px;
+        height: auto;
+    }
+    .architecte, .MO{
+        margin: 80px 40px 40px 50px;
+    }
+    .designer {
+        margin: 80px 50px 40px 40px;
+    }
+    
+/*------------------------NAVIGATION-----------------------*/
+        #menu li, .dropdown .dropbtn {
+        font-size: 14px;
+        padding-right: 15px; 
+    }
+    .dropdown {
+        padding-top: 5px;
+    }
+    .dropdown-content a {
+        font-size: 12px;
+        height: 28px;
+    }
+
+   #menuToggle
+{
+  display: block;
+  position: fixed;
+  bottom: -40px;
+  left: 20px;
+  width: 100%;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #ffff;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #bdac97;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+    
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-bottom: 8px;
+  position: relative;
+  background: #dedddd;
+  border-radius: 1px;
+  
+    z-index: 1;}
+
+#menu
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: -100px 0 0 -20px;
+    padding: 20px 0px 60px 0px;
+  
+  background: #4c5949;
+    opacity: 70%;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  
+ transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
@@ -627,4 +749,3 @@ header{
         font-size: 22px;
     }
 }
----*/
