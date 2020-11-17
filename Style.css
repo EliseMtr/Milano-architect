@@ -356,7 +356,9 @@ flex-direction: row;
         flex-direction: row;
         margin-left: 50px;
     }
-
+ #menu .dropdown .dropdown-content a {
+        padding-right: 50px;
+    }
 /*-----------------------------------------------ACCUEIL--------------------------------------------*/
 
 /*----------------------Fond---------------------*/
