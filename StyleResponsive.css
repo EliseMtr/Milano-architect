@@ -116,6 +116,7 @@ bottom: -430px;
         display: flex;
         flex-direction: row;
         margin-bottom: 10px;
+        margin-left: 0;
     }
     
     .liste-icon i{
@@ -350,10 +351,10 @@ header{
 /*-------------------------SMARTPHONE 720PX-----------------------------*/
 @media screen and (min-width: 720px) and (max-width: 840px) {
 h1{
-        font-size: 38px;
+        font-size: 32px;
     }
 .presta-particulier h1, .presta-pro h1, .rea-architecture h1, .rea-design h1, .agence h1, .contact h1{
-        font-size: 38px;
+        font-size: 32px;
     }
 .Titre-header h2{
         font-size: 32px;
@@ -514,6 +515,7 @@ bottom: -445px;
     .liste-icon i{
         padding: 0 30px;
         font-size: 30px;
+        margin-left: 0;
     }
     #menu a, .dropdown .dropbtn {
     text-decoration: none;
@@ -806,10 +808,10 @@ bottom: -445px;
 @media screen and (min-width: 841px) and (max-width: 999px) {
 
     h1{
-        font-size: 44px;
+        font-size: 34px;
     }
 .presta-particulier h1, .presta-pro h1, .rea-architecture h1, .rea-design h1, .agence h1, .contact h1{
-        font-size: 44px;
+        font-size: 34px;
     }
 .Titre-header h2{
         font-size: 38px;
@@ -961,6 +963,7 @@ bottom: -490px;
     .liste-icon i{
         padding: 0 30px;
         font-size: 30px;
+        margin-left: 0;
     }
     #menu a, .dropdown .dropbtn {
     text-decoration: none;
@@ -1166,7 +1169,10 @@ bottom: -490px;
         font-size: 44px;
     }
     h1{
-        font-size: 48px;
+        font-size: 36px;
+    }
+    .presta-particulier h1, .presta-pro h1, .rea-architecture h1, .rea-design h1, .agence h1, .contact h1{
+        font-size: 36px;
     }
     .Titre-header h2{
         font-size: 44px;
@@ -1313,6 +1319,7 @@ bottom: -440px;
         display: flex;
         flex-direction: row;
         margin-bottom: 10px;
+        margin-left: 0;
     }
     
     .liste-icon i{
