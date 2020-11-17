@@ -1,6 +1,358 @@
 /*------------------------SMARTPHONE---------------------------------*/
-@media (max-width: 840px) {
+@media screen and (max-width: 719px) {
+
+/*----------BASE-----------*/ 
+    h1{
+        font-size: 28px;
+    }
+.Titre-header h2{
+        font-size: 26px;
+    }
+.hero-image-accueil h2{
+        font-size: 26px;
+    }
+    .logo-milano2{
+        margin-bottom: -15px;
+    }  
+    .logo-milano{
+        margin-bottom: -15px;
+    } 
+/*---------NAVIGATION--------*/
+ 
+   #menuToggle
+{
+  display: block;
+  position: fixed;
+  bottom: -40px;
+  left: 20px;
+  width: 100%;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #ffff;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #bdac97;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 50px;
+  height: 1000px;
+  /*position: static;*/
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-bottom: 8px;
+  position: relative;
+bottom: -430px;
+  background: #dedddd;
+  border-radius: 1px;
+  
+    z-index: 1;}
+#menu
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: -100px 0 0 -20px;
+    padding: 20px 0px 60px 0px;
+  
+  background: #4c5949;
+    opacity: 70%;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  
+ transform-origin: 0% 0%;
+  transform: translate(0, 100%);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
+}
+
+    ul #menu {
+        padding-right: 40px;
+    }
+    #menuToggle input:checked ~ ul{
+  transform: none;
+}
+
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+    .sticky + .texte {
+    padding-top: 60px;
+}
+      #menu li{
+         padding-top: 50px;
+    }
+    
+    #menu .liste-icon {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    
+    .liste-icon i{
+        padding: 0 30px;
+        font-size: 24px;
+    }
+    #menu a, .dropdown .dropbtn {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'winterthurcondensedregular';
+    letter-spacing: 0.3em;
+    font-size: 36px;
+}
+    .dropdown .dropbtn{
+        padding-top: 50px;
+    }
+
+   .dropdown-content {
+        margin-bottom: 30px;
+    }
+
+    #menu .dropdown .dropdown-content a {
+        padding-right: 30px;
+        padding-top: 10px;
+        font-size: 26px;
+    }
+/*-------HERO-IMAGE-----*/
+    
+    .hero-image-contact{
+        filter:brightness(90%)
+    }
+    .hero-image-agence{
+        filter: brightness(90%)
+    }
+     .hero-image-rea-architecture {
+        filter: brightness(90%)
+    }
+    .hero-image-rea-design {
+        filter: brightness(85%)
+    }
+
+/*-------------------FOOTER--------------------*/
+footer {
+        padding: 30px 60px;
+    }
+footer h4{
+        font-size: 12px;
+    }
+footer p{
+        font-size: 10px;
+        padding-top: 30px;
+    }
+header{
+        height: 100vh;
+    }
+    
+    /*--------------------PRESTA------------------*/
+    
+    h2.double{
+        font-size:70px;
+        margin-bottom: 5px;
+    }
+    span.taille{
+        font-size: 42px;
+        margin-left: 90px;
+    }
+    .architecture h2{
+       line-height: 0.43;
+    }
+    .design-espace h2{
+        margin-left: 90px;
+        line-height: 0.43;
+    }
+    .design-espace{
+        margin: 100px 0 150px 0;
+    }
+    .texte-architecture{
+        margin: -24px 100px 0px -10px;
+        padding: 40px 40px 50px 40px;
+        border-width: 7px;
+    }
+    
+    .texte-design-espace{
+        margin: -24px 0px 0px 100px;
+        padding: 60px 40px 50px 40px;
+        border-width: 7px;
+    }
+    .architecture p, .design-espace p{
+        font-size: 24px;
+    }
+    .architecture h3, .design-espace h3{
+        font-size: 28px;
+        padding-left: 20px;
+    }
+    span .crea-meuble{
+        font-style: italic;
+        text-align: center;
+        font-size: 24px;
+    }
+/*---------------------REALISATIONS-----------------*/
+    
+    .breve__titre {
+        font-size: 48px;
+    }
+    
+    .realisations .breve__chapo, .design-mobilier .breve__chapo {
+        font-size: 16px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+/*---------------------L'AGENCE----------------------*/
+    .agence {
+        padding: 0 20px 0 20px;   
+    }
+    
+    .agence h2{
+        font-size: 34px;
+    }
+    .agence p {
+        padding-bottom: 20px;
+        margin: 0 50px;
+        font-size: 20px;
+    }
+    #notre-agence{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .architecte,.designer, .MO{
+        margin: 20px 40px;
+        display: block;
+        justify-content: center;
+    }
+    .architecte .description, .designer .description, .MO .description{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+        margin: inherit;
+    }
+    .architecte img, .designer img, .MO img {
+        max-width: 400px;
+        height: auto;
+    }
+    
+    .architecte img:hover , .designer img:hover, .MO img:hover{
+        background-color: #fff;
+        opacity: 70%;
+    }
+    
+    .designer h3, .architecte h3, .MO h3 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .designer p, .architecte p, .MO p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .designer .description .fab,.architecte .description .fab, .MO .description .fab {
+       padding: 20px 20px 40px 0;
+    }
+    .designer .description .fab:hover,.architecte .description .fab:hover, .MO .description .fab:hover{
+        color: #4c5949;
+    }
+.MO {
+    margin-bottom: 50px;
+    }
+/*----------------------CONTACT----------------------*/
+
+    .coordonnees {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0px 50px 0px;
+}
+
+    .formulaire{
+        margin-bottom: 50px;
+    }
+    
+    .coordonnees p {
+    padding: 20px 10px;
+}
+
+    .formulaire, .adresse {
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%
+}
+    .formulaire h2{
+        margin-top: 50px;
+        font-size: 26px;
+    }
+    .adresse h2{
+        margin: 0px 0 20px 0;
+        font-size: 26px;
+    }
+    form input {
+        margin-top: 20px;
+        width: 75%;
+    }
+    textarea, label{
+        font-family: 'Source sans Pro';
+        padding-left: 5px;
+        width: 75%;
+    }
+    .bouton_ok button {
+    background-color: #bdac97;
+    border-color: #bdac97;
+    border-style: solid;
+    border-radius: 7px;
+    width: 200px;
+    padding: 10px 0;
+    margin-top: 10px;
+    color: #ffff;
+    text-transform: uppercase;
+    font-family: 'winterthurcondensedregular';
+    letter-spacing: 0.3em;
+    }
+    .adresse iframe{
+        margin-top: 20px;
+        border-radius: inherit;
+        width: 70%
+    }
+    
+}
+
+/*-------------------------SMARTPHONE 720PX-----------------------------*/
+@media screen and (min-width: 720px) and (max-width: 840px) {
 h1{
+        font-size: 38px;
+    }
+.presta-particulier h1, .presta-pro h1, .rea-architecture h1, .rea-design h1, .agence h1, .contact h1{
         font-size: 38px;
     }
 .Titre-header h2{
@@ -9,14 +361,13 @@ h1{
 .hero-image-accueil h2{
         font-size: 32px;
     }
-    
 /*--------------------HEADER--------------------*/
 
    .logo-milano2 {
         margin-bottom: -20px;
     }
     .logo-milano {
-        margin-bottom: 110px;
+        margin-bottom: -20px;
     }
 /*-------HERO-IMAGE-----*/
     
@@ -29,7 +380,9 @@ h1{
     .hero-image-agence{
         filter: brightness(90%)
     }
-
+.hero-image-contact{
+        filter:brightness(90%)
+    }
 /*-------------------FOOTER--------------------*/
 footer {
         padding: 30px 60px;
@@ -86,33 +439,30 @@ header{
   color: #bdac97;
 }
 
-
 #menuToggle input
 {
   display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
+  width: 50px;
+  height: 1000px;
+  /*position: static;*/
   cursor: pointer;
   opacity: 0; 
   z-index: 2; 
-  
   -webkit-touch-callout: none;
 }
 
 #menuToggle span
 {
   display: block;
-  width: 50px;
-  height: 4px;
-  margin-bottom: 10px;
+  width: 40px;
+  height: 3px;
+  margin-bottom: 8px;
   position: relative;
-  
+bottom: -445px;
   background: #dedddd;
   border-radius: 1px;
   
     z-index: 1;}
-
 #menu
 {
     display: flex;
@@ -131,7 +481,7 @@ header{
 
   
  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(0, 100%);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
 }
 
@@ -151,8 +501,19 @@ header{
     .sticky + .texte {
     padding-top: 60px;
 }
-    #menu li{
-         padding: 15px 0px;
+     #menu li{
+         padding-top: 50px;
+    }
+    
+    #menu .liste-icon {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    
+    .liste-icon i{
+        padding: 0 30px;
+        font-size: 30px;
     }
     #menu a, .dropdown .dropbtn {
     text-decoration: none;
@@ -160,24 +521,34 @@ header{
     text-transform: uppercase;
     font-family: 'winterthurcondensedregular';
     letter-spacing: 0.3em;
-    font-size: 20px;
+    font-size: 36px;
 }
-
     .dropdown .dropbtn{
-        padding-top: 0;
-        padding: 10px 0;
+        padding-top: 50px;
     }
-    .dropdown {
-        padding-top: 0;
+
+   .dropdown-content {
+        margin-bottom: 30px;
+       padding-top: 10px;
     }
     
+     .dropdown-content a{
+        padding-right: 30px;
+    }
+    
+   #menu .dropdown .dropdown-content a {
+        padding-right: 40px;
+        padding-top: 10px;
+        font-size: 30px;
+    }
 /*--------------------PRESTA------------------*/
     
     h2.double{
-        font-size:84px;
+        font-size:74px;
+        margin-bottom: 2px;
     }
     span.taille{
-        font-size: 56px;
+        font-size: 46px;
         margin-left: 110px;
     }
     .architecture h2{
@@ -211,11 +582,21 @@ header{
         font-size: 24px;
     }
 /*---------------------REALISATIONS-----------------*/
-    
+    .breve__titre{
+        font-size: 52px;
+    }
+    .realisations .breve__chapo, .design-mobilier .breve__chapo {
+        font-size: 18px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 /*---------------------L'AGENCE----------------------*/
     .agence {
         padding: 0 20px 0 20px;
         
+    }
+    .agence h2{
+        font-size: 42px;
     }
     .agence p {
         padding-bottom: 20px;
@@ -406,38 +787,75 @@ header{
 		margin-bottom: 32px;
         font-style: italic
 	}
+  .carrousel .navSlider svg {
+			transition: transform 0.2s;
+			transition: transform 0.2s, -webkit-transform 0.2s;
+        
+	}
+	.carrousel .navSlider:hover svg {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+        cursor: pointer;}
+    
+}
  
 }----*/
 
-/*------------------------------TABLETTE (MIN 841px)-------------------------*/
+/*------------------------------TELEPHONE (MIN 841px)-------------------------*/
 
 @media screen and (min-width: 841px) and (max-width: 999px) {
-     .accueil h2{
-        font-size: 34px;
-    }
+
     h1{
-        font-size: 48px;
+        font-size: 44px;
     }
-    
+.presta-particulier h1, .presta-pro h1, .rea-architecture h1, .rea-design h1, .agence h1, .contact h1{
+        font-size: 44px;
+    }
 .Titre-header h2{
-        font-size: 34px;
+        font-size: 38px;
+    }
+.hero-image-accueil h2{
+        font-size: 38px;
     }
 .architecture p, .design-espace p{
         font-size: 22px;
     }
-/*----------NAVIGATION----------*/
+/*--------------------HEADER--------------------*/
 
-       #menu li, .dropdown .dropbtn {
-        font-size: 14px;
-        padding-right: 15px; 
+   .logo-milano2 {
+        margin-bottom: -17px;
     }
-    .dropdown {
-        padding-top: 5px;
+    .logo-milano {
+        margin-bottom: -17px;
     }
-    .dropdown-content a {
+/*-------HERO-IMAGE-----*/
+    
+    .hero-image-rea-architecture {
+        filter: brightness(90%)
+    }
+    .hero-image-rea-design {
+        filter: brightness(85%)
+    }
+    .hero-image-agence{
+        filter: brightness(90%)
+    }
+.hero-image-contact{
+        filter:brightness(90%)
+    }
+ 
+/*-------------------FOOTER--------------------*/
+footer {
+        padding: 30px 60px;
+    }
+footer h4{
         font-size: 12px;
-        height: 28px;
     }
+footer p{
+        font-size: 10px;
+        padding-top: 30px;
+    }
+    
+/*----------NAVIGATION----------*/
 
    #menuToggle
 {
@@ -470,24 +888,23 @@ header{
 #menuToggle input
 {
   display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
+  width: 50px;
+  height: 1000px;
+  /*position: static;*/
   cursor: pointer;
   opacity: 0; 
   z-index: 2; 
-  
   -webkit-touch-callout: none;
 }
 
 #menuToggle span
 {
   display: block;
-  width: 50px;
-  height: 4px;
-  margin-bottom: 10px;
+  width: 40px;
+  height: 3px;
+  margin-bottom: 8px;
   position: relative;
-  
+bottom: -490px;
   background: #dedddd;
   border-radius: 1px;
   
@@ -511,7 +928,363 @@ header{
 
   
  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(0, 100%);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
+}
+
+    ul #menu {
+        padding-right: 40px;
+    }
+    #menuToggle input:checked ~ ul{
+  transform: none;
+}
+
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+    .sticky + .texte {
+    padding-top: 60px;
+}
+     #menu li{
+         padding-top: 60px;
+    }
+    
+    #menu .liste-icon {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    
+    .liste-icon i{
+        padding: 0 30px;
+        font-size: 30px;
+    }
+    #menu a, .dropdown .dropbtn {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'winterthurcondensedregular';
+    letter-spacing: 0.3em;
+    font-size: 36px;
+}
+    .dropdown .dropbtn{
+        padding-top: 60px;
+    }
+
+   .dropdown-content {
+        margin-bottom: 30px;
+       padding-top: 10px;
+    }
+
+     .dropdown-content a{
+        padding-right: 50px;
+        font-size: 26px;
+    }
+    
+   #menu .dropdown .dropdown-content a {
+        padding-right: 30px;
+        padding-top: 10px;
+        font-size: 30px;
+    }
+/*--------------------PRESTA------------------*/
+    
+    h2.double{
+        font-size:84px;
+    }
+    span.taille{
+        font-size: 56px;
+        margin-left: 110px;
+    }
+    .architecture h2{
+       line-height: 0.43;
+    }
+    .design-espace h2{
+        margin-left: 90px;
+        line-height: 0.43;
+    }
+    .texte-architecture{
+        margin: -24px 100px 0px -10px;
+        padding: 40px 40px 50px 40px;
+        border-width: 7px;
+    }
+    
+    .texte-design-espace{
+        margin: -24px 0px 0px 100px;
+        padding: 60px 40px 50px 40px;
+        border-width: 7px;
+    }
+    .architecture p, .design-espace p{
+        font-size: 24px;
+    }
+    .architecture h3, .design-espace h3{
+        font-size: 28px;
+        padding-left: 20px;
+    }
+    span .crea-meuble{
+        font-style: italic;
+        text-align: center;
+        font-size: 24px;
+    }
+/*---------------------REALISATIONS-----------------*/
+    
+    .breve__titre{
+        font-size: 52px;
+    }
+    .realisations .breve__chapo, .design-mobilier .breve__chapo {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+/*---------------------L'AGENCE----------------------*/
+    .agence {
+        padding: 0 20px 0 20px;
+        
+    }
+    .agence h2{
+        font-size: 50px;
+    }
+    .agence p {
+        padding-bottom: 20px;
+        margin: 0 50px;
+        font-size: 26px;
+    }
+    #notre-agence{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .architecte,.designer, .MO{
+        margin: 20px 40px;
+        display: block;
+        justify-content: center;
+    }
+    .architecte .description, .designer .description, .MO .description{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+        margin: inherit;
+    }
+    .architecte img, .designer img, .MO img {
+        max-width: 400px;
+        height: auto;
+    }
+    
+    .architecte img:hover , .designer img:hover, .MO img:hover{
+        background-color: #fff;
+        opacity: 70%;
+    }
+    
+    .designer h3, .architecte h3, .MO h3 {
+        font-size: 34px;
+        text-align: center;
+    }
+    .designer p, .architecte p, .MO p {
+        font-size: 22px;
+        text-align: center;
+    }
+    .designer .description .fab,.architecte .description .fab, .MO .description .fab {
+       padding: 20px 20px 40px 0;
+    }
+    .designer .description .fab:hover,.architecte .description .fab:hover, .MO .description .fab:hover{
+        color: #4c5949;
+    }
+.MO {
+    margin-bottom: 50px;
+    }
+/*----------------------CONTACT----------------------*/
+
+
+    .coordonnees {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0px 50px 0px;
+}
+
+    .formulaire{
+        margin-bottom: 50px;
+    }
+    
+    .coordonnees p {
+    padding: 20px 10px;
+}
+
+    .formulaire, .adresse {
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%
+}
+    .formulaire h2{
+        margin-top: 50px;
+        font-size: 34px;
+    }
+    .adresse h2{
+        margin: 0px 0 20px 0;
+        font-size: 34px;
+    }
+    form input {
+        margin-top: 20px;
+        width: 60%;
+    }
+    textarea, label{
+        font-family: 'Source sans Pro';
+        padding-left: 5px;
+        width: 60%;
+    }
+    .bouton_ok button {
+    background-color: #bdac97;
+    border-color: #bdac97;
+    border-style: solid;
+    border-radius: 7px;
+    width: 200px;
+    padding: 10px 0;
+    margin-top: 10px;
+    color: #ffff;
+    text-transform: uppercase;
+    font-family: 'winterthurcondensedregular';
+    letter-spacing: 0.3em;
+    }
+    .adresse iframe{
+        margin-top: 20px;
+        border-radius: inherit;
+        width: 70%
+    }
+
+}
+/*---------------------------TABLETTE (min 1000px)-------------------------*/
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+ 
+/*-----------BASE-----------*/
+    .accueil h2{
+        font-size: 44px;
+    }
+    h1{
+        font-size: 48px;
+    }
+    .Titre-header h2{
+        font-size: 44px;
+    }
+   
+    .architecte, .MO{
+        margin: 80px 40px 40px 50px;
+    }
+    .designer {
+        margin: 80px 50px 40px 40px;
+    }
+/*--------------------HEADER--------------------*/
+
+   .logo-milano2 {
+        margin-bottom: -17px;
+    }
+    .logo-milano {
+        margin-bottom: -17px;
+    }
+/*-------HERO-IMAGE-----*/
+    
+    .hero-image-rea-architecture {
+        filter: brightness(90%)
+    }
+    .hero-image-rea-design {
+        filter: brightness(85%)
+    }
+    .hero-image-agence{
+        filter: brightness(90%)
+    }
+.hero-image-contact{
+        filter:brightness(90%)
+    }
+ 
+/*-------------------FOOTER--------------------*/
+footer {
+        padding: 30px 60px;
+    }
+footer h4{
+        font-size: 12px;
+    }
+footer p{
+        font-size: 10px;
+        padding-top: 30px;
+    }
+/*------------------------NAVIGATION-----------------------*/
+
+   #menuToggle
+{
+  display: block;
+  position: fixed;
+  bottom: -40px;
+  left: 20px;
+  width: 100%;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #ffff;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #bdac97;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 50px;
+  height: 1000px;
+  /*position: static;*/
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-bottom: 8px;
+  position: relative;
+bottom: -440px;
+  background: #dedddd;
+  border-radius: 1px;
+  
+    z-index: 1;}
+
+#menu
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: -100px 0 0 -20px;
+    padding: 20px 0px 60px 0px;
+  
+  background: #4c5949;
+    opacity: 70%;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  
+ transform-origin: 0% 0%;
+  transform: translate(0, 100%);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
 }
 
@@ -532,7 +1305,19 @@ header{
     padding-top: 60px;
 }
     #menu li{
-         padding: 15px 0px;
+         padding-top: 50px;
+    }
+    
+    
+    #menu .liste-icon {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    
+    .liste-icon i{
+        padding: 0 30px;
+        font-size: 32px;
     }
     #menu a, .dropdown .dropbtn {
     text-decoration: none;
@@ -540,180 +1325,29 @@ header{
     text-transform: uppercase;
     font-family: 'winterthurcondensedregular';
     letter-spacing: 0.3em;
-    font-size: 20px;
+    font-size: 38px;
 }
-
     .dropdown .dropbtn{
-        padding-top: 0;
-        padding: 10px 0;
+        padding-top: 50px;
     }
-    .dropdown {
-        padding-top: 0;
-    }
-/*-----------------AGENCE----------------*/
 
-    .carrousel .navSlider svg {
-			transition: transform 0.2s;
-			transition: transform 0.2s, -webkit-transform 0.2s;
-        
-	}
-	.carrousel .navSlider:hover svg {
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-        cursor: pointer;}
-    
-}
-/*---------------------------TABLETTE (min 1300px)-------------------------*/
-
-@media screen and (min-width: 1000px) and (max-width: 1300px) {
- 
-/*-----------BASE-----------*/
-    .accueil h2{
-        font-size: 44px;
-    }
-    h1{
-        font-size: 48px;
-    }
-    .Titre-header h2{
-        font-size: 44px;
+   .dropdown-content {
+        margin-bottom: 30px;
+       padding-top: 10px;
     }
     
-     .architecte img, .designer img, .MO img {
-        max-width: 600px;
-        height: auto;
-    }
-    .architecte, .MO{
-        margin: 80px 40px 40px 50px;
-    }
-    .designer {
-        margin: 80px 50px 40px 40px;
+    .dropdown-content a{
+        padding-right: 50px;
+        font-size: 26px;
     }
     
-/*------------------------NAVIGATION-----------------------*/
-        #menu li, .dropdown .dropbtn {
-        font-size: 14px;
-        padding-right: 15px; 
+   #menu .dropdown .dropdown-content a {
+        padding-right: 30px;
+        padding-top: 10px;
+        font-size: 32px;
     }
-    .dropdown {
-        padding-top: 5px;
-    }
-    .dropdown-content a {
-        font-size: 12px;
-        height: 28px;
-    }
-
-   #menuToggle
-{
-  display: block;
-  position: fixed;
-  bottom: -40px;
-  left: 20px;
-  width: 100%;
-  
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: #ffff;
-  
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: #bdac97;
-}
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  cursor: pointer;
-  opacity: 0; 
-  z-index: 2; 
+/*-------------CARROUSEL----------------*/
     
-  -webkit-touch-callout: none;
-}
-
-#menuToggle span
-{
-  display: block;
-  width: 40px;
-  height: 3px;
-  margin-bottom: 8px;
-  position: relative;
-  background: #dedddd;
-  border-radius: 1px;
-  
-    z-index: 1;}
-
-#menu
-{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: -100px 0 0 -20px;
-    padding: 20px 0px 60px 0px;
-  
-  background: #4c5949;
-    opacity: 70%;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-
-  
- transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-    ul #menu {
-        padding-right: 40px;
-    }
-    #menuToggle input:checked ~ ul{
-  transform: none;
-}
-
-    .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-    .sticky + .texte {
-    padding-top: 60px;
-}
-    #menu li{
-         padding: 15px 0px;
-    }
-    #menu a, .dropdown .dropbtn {
-    text-decoration: none;
-    list-style: none;
-    text-transform: uppercase;
-    font-family: 'winterthurcondensedregular';
-    letter-spacing: 0.3em;
-    font-size: 20px;
-}
-
-    .dropdown .dropbtn{
-        padding-top: 0;
-        padding: 10px 0;
-    }
-    .dropdown {
-        padding-top: 0;
-    }
-    
-    
-
 	.carrousel .navSlider {
 			width: 80px;
 			height: 80px;
@@ -735,7 +1369,6 @@ header{
 		pointer-events: none;
 	}
 
-
 	.carrousel .overflowSlider .lien:last-child {
 		margin-right: 250px;
 	}
@@ -744,8 +1377,171 @@ header{
 		transform: translateY(-5px);
 	}
 
-
-.architecture p, .design-espace p{
+/*--------------------PRESTA------------------*/
+    
+    h2.double{
+        font-size:84px;
+    }
+    span.taille{
+        font-size: 56px;
+        margin-left: 110px;
+    }
+    .architecture h2{
+       line-height: 0.43;
+    }
+    .design-espace h2{
+        margin-left: 90px;
+        line-height: 0.43;
+    }
+    .texte-architecture{
+        margin: -24px 100px 0px -10px;
+        padding: 40px 40px 50px 40px;
+        border-width: 7px;
+    }
+    
+    .texte-design-espace{
+        margin: -24px 0px 0px 100px;
+        padding: 60px 40px 50px 40px;
+        border-width: 7px;
+    }
+    .architecture p, .design-espace p{
         font-size: 22px;
     }
+    .architecture h3, .design-espace h3{
+        font-size: 28px;
+        padding-left: 20px;
+    }
+    span .crea-meuble{
+        font-style: italic;
+        text-align: center;
+        font-size: 24px;
+    }
+/*---------------------REALISATIONS-----------------*/
+    
+    .breve__titre{
+        font-size: 52px;
+    }
+    .realisations .breve__chapo, .design-mobilier .breve__chapo {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+/*---------------------L'AGENCE----------------------*/
+    .agence {
+        padding: 0 20px 0 20px;
+        
+    }
+    .agence h2{
+        font-size: 50px;
+    }
+    .agence p {
+        padding-bottom: 20px;
+        margin: 0 50px;
+        font-size: 26px;
+    }
+    #notre-agence{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .architecte,.designer, .MO{
+        margin: 20px 40px;
+        display: block;
+        justify-content: center;
+    }
+    .architecte .description, .designer .description, .MO .description{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+        margin: inherit;
+    }
+    .architecte img, .designer img, .MO img {
+        max-width: 400px;
+        height: auto;
+    }
+    
+    .architecte img:hover , .designer img:hover, .MO img:hover{
+        background-color: #fff;
+        opacity: 70%;
+    }
+    
+    .designer h3, .architecte h3, .MO h3 {
+        font-size: 34px;
+        text-align: center;
+    }
+    .designer p, .architecte p, .MO p {
+        font-size: 22px;
+        text-align: center;
+    }
+    .designer .description .fab,.architecte .description .fab, .MO .description .fab {
+       padding: 20px 20px 40px 0;
+    }
+    .designer .description .fab:hover,.architecte .description .fab:hover, .MO .description .fab:hover{
+        color: #4c5949;
+    }
+.MO {
+    margin-bottom: 50px;
+    }
+/*----------------------CONTACT----------------------*/
+
+
+    .coordonnees {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0px 50px 0px;
+}
+
+    .formulaire{
+        margin-bottom: 50px;
+    }
+    
+    .coordonnees p {
+    padding: 20px 10px;
+}
+
+    .formulaire, .adresse {
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%
+}
+    .formulaire h2{
+        margin-top: 50px;
+        font-size: 34px;
+    }
+    .adresse h2{
+        margin: 0px 0 20px 0;
+        font-size: 34px;
+    }
+    form input {
+        margin-top: 20px;
+        width: 50%;
+    }
+    textarea, label{
+        font-family: 'Source sans Pro';
+        padding-left: 5px;
+        width: 50%;
+    }
+    .bouton_ok button {
+    background-color: #bdac97;
+    border-color: #bdac97;
+    border-style: solid;
+    border-radius: 7px;
+    width: 200px;
+    padding: 10px 0;
+    margin-top: 10px;
+    color: #ffff;
+    text-transform: uppercase;
+    font-family: 'winterthurcondensedregular';
+    letter-spacing: 0.3em;
+    }
+    .adresse iframe{
+        margin-top: 20px;
+        border-radius: inherit;
+        width: 70%
+    }
+
 }

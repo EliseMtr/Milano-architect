@@ -192,9 +192,9 @@ body,html {
 #menuToggle span
 {
   display: block;
-  width: 25px;
+  width: 30px;
   height: 2px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   position: relative;
   
   background: #cbc5c5;
@@ -240,12 +240,12 @@ body,html {
 #menu
 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: left;
     align-items: center;
-  width: 100%;
+    width: 100%;
     margin: -100px 0 0 -20px;
-    padding: 0 40px 40px 200px;
+    padding: 0 40px 40px 50px;
   padding-top: 40px;
   
   background: #4c5949;
@@ -263,7 +263,7 @@ body,html {
 #menu li
 {
   font-size: 22px;
-text-transform: uppercase;
+  text-transform: uppercase;
     padding-right: 50px;
 }
 
@@ -350,6 +350,13 @@ flex-direction: row;
   background-color: inherit;
     color: #bdac97;
 }
+
+ #menu .liste-icon {
+        display: flex;
+        flex-direction: row;
+        margin-left: 50px;
+    }
+
 /*-----------------------------------------------ACCUEIL--------------------------------------------*/
 
 /*----------------------Fond---------------------*/
