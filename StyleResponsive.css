@@ -412,7 +412,7 @@ header{
 
 /*------------------------------TABLETTE (MIN 1000)-------------------------*/
 
-@media (max-width: 1000px) {
+/*@media (max-width: 1000px) {
      .accueil h2{
         font-size: 34px;
     }
@@ -425,10 +425,10 @@ header{
     }
 .architecture p, .design-espace p{
         font-size: 22px;
-    }
+    }*/
 /*-----------------AGENCE----------------*/
 
-	.carrousel .navSlider svg {
+/*	.carrousel .navSlider svg {
 			transition: transform 0.2s;
 			transition: transform 0.2s, -webkit-transform 0.2s;
         
@@ -438,11 +438,11 @@ header{
 		transform: scale(1.2);
         cursor: pointer;}
     
-}
+}*/
 /*---------------------------TABLETTE (min 1300px)-------------------------*/
+/*----
 @media (max-width: 1300px) {
  
-
     .accueil h2{
         font-size: 44px;
     }
@@ -453,7 +453,6 @@ header{
         font-size: 44px;
     }
     
-/*---------PORTRAITS---------*/
      .architecte img, .designer img, .MO img {
         max-width: 600px;
         height: auto;
@@ -465,7 +464,6 @@ header{
         margin: 80px 50px 40px 40px;
     }
     
-/*----------------------NAVIGATION---------------------*/
 
         #menu li, .dropdown .dropbtn {
         font-size: 14px;
@@ -553,7 +551,7 @@ header{
  transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transform: rotate(90deg);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
     ul #menu {
@@ -592,7 +590,6 @@ header{
         padding-top: 0;
     }
     
-/*------------------CARROUSEL----------------------*/
     
 
 	.carrousel .navSlider {
@@ -625,9 +622,9 @@ header{
 		transform: translateY(-5px);
 	}
 
-}
-/*--------------------PRESTA----------------------*/
 
 .architecture p, .design-espace p{
         font-size: 22px;
     }
+}
+---*/
