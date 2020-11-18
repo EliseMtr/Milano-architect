@@ -1,4 +1,4 @@
-	//Slider nav with arrows
+//Slider nav with arrows
 let slider = document.querySelector(".slider");
 let sliderWrapper = document.querySelector(".sliderWrapper");
 let navSliderButtons = document.querySelectorAll(".navSlider");

@@ -94,6 +94,7 @@ h3 {
     padding-top: 20px; 
     
 }
+
 h4 {
     font-family: 'winterthurcondensedregular';
     letter-spacing: 0.3em;
@@ -101,13 +102,6 @@ h4 {
     text-transform: uppercase;
     color: 2f2f2f;
 }
-
-p {
-    font-size: 18px;
-    color: 2f2f2f;
-    
-}
-
 
 /*-------------------Body--------------------*/
 
@@ -599,26 +593,28 @@ footer p{
     padding-right: 50px;
 }
 
-.carrousel {
-    display: block;
-    flex-direction: row;
-    align-items: content;
+#carrousel {
+	display: block;
+    justify-content: center;
+    align-content: center;
 	margin-left: auto;
 	margin-right: auto;
+    background-color: #e3dcd4;
 	color: #2f2f2f;
-	background-color: #d0c8c0;
 	position: relative;
-    padding: 30px 0px;
+    padding: 50px 0px ;
+    margin: 100px 0 300px 0;
     z-index: 0;
 }
 
-	.carrousel .slider {
+
+	#carrousel .slider {
 		overflow-y: hidden;
 		position: relative;
 		padding-left: 16px;
 	}
 
-	.carrousel .sliderWrapper {
+	#carrousel .sliderWrapper {
 		position: relative;
 		overflow-x: scroll;
 		text-align: center;
@@ -628,32 +624,37 @@ footer p{
 	}
 
 @media (prefers-reduced-motion: reduce) {
-	.carrousel .sliderWrapper {
+	#carrousel .sliderWrapper {
 		scroll-behavior: auto;
 	}
 }
-
+.breve__intro{
+    margin-top: 200px;
+    display: block;
+    justify-content: center;
+}
 .breve__titre {
-	font-size: 62px;
+	font-size: 50px;
 	letter-spacing: 0.3em;
 	line-height: 28px;
 	color: #2f2f2f;
 	text-transform: uppercase;
-    margin: 50px 0;
+    margin: 20px 0;
 }
-.realisations .breve__chapo, .design-mobilier .breve__chapo {
+
+.breve__chapo {
 	font-size: 16px;
 	line-height: 22px;
-	max-width: 664px;
 	color: #2f2f2f;
-	padding: 80px 0px 40px 0px;
+	padding: 30px 20px 70px 20px;
     font-family: 'Source sans Pro';
     font-style: italic;
     text-align: center;
-    margin: auto;
+    display: block;
+    justify-content: center;
 }
 
-.carrousel .listeLien {
+#carrousel .listeLien {
 	border-left: none;
 	max-width: 1300px;
 	width: 100%;
@@ -668,23 +669,16 @@ footer p{
 	vertical-align: top;
 }
 
-.realisations .carrousel .lien {
-	width: 250px;
+#carrousel .lien {
+	width: 300px;
 	padding-right: 20px;
 	margin-right: 0;
 	position: relative;
 	display: inline-block;
 	border-bottom: none;
+	cursor: pointer;
 }
-.design-mobilier .carrousel .lien {
-    width: 500px;
-	padding-right: 20px;
-	margin-right: 0;
-	position: relative;
-	display: inline-block;
-	border-bottom: none;
-}
-	.carrousel .lien::after {
+	#carrousel .lien::after {
 		content: "";
 		position: absolute;
 		height: 163px;
@@ -695,12 +689,13 @@ footer p{
 		z-index: 1;
 	}
 
-	.carrousel .lien__titre {
+	#carrousel .lien__titre {
 		font-size: 20px;
 		letter-spacing: 0.4px;
 		line-height: 24px;
 		color: #2f2f2f;
 		font-family: 'winterthurcondensedregular';
+		position: absolute;
 		position: absolute;
 		width: 82%;
 		bottom: 12px;
@@ -717,11 +712,19 @@ footer p{
 		margin-bottom: 0;
 	}
 
-	.carrousel .lien img {
+	#carrousel .lien img {
 		display: block;
 		max-width: 100%;
         z-index: 1;
 	}
+
+#carrousel .navSlider {
+	display: none; 
+}
+
+/*
+	sliderMarks
+
 .sliderMarks {
 	text-align: center;
 	margin-left: auto;
@@ -734,14 +737,16 @@ footer p{
 	height: 10px;
 	margin-right: 8px;
 	border-radius: 50%;
-	border: 1px solid #bdac97;
+	border: 1px solid #3A3443;
 }
 	.sliderMarks div.active {
-		background-color: #bdac97;
+		background-color: #3A3443;
+	}*/
+
+
+	#carrousel .sliderMarks {
+		display: none;
 	}
-
-
-
 
 	/*
 		
@@ -750,6 +755,7 @@ footer p{
 	*/
 	.navSlider {
 		position: absolute;
+		cursor: pointer;
 		width: 50px;
 		height: 50px;
 		padding-top: 10px;
@@ -761,31 +767,85 @@ footer p{
 		align-items: center;
 		z-index: 4;
 	}
-		.carrousel .navSliderLeft {left: 0;}
-		.carrousel .navSliderRight {right: 0;}
+		#carrousel .navSliderLeft {left: 0;}
+		#carrousel .navSliderRight {right: 0;}
 
-		.carrousel .slider.leftLocked .navSliderLeft,
-		.carrousel .slider.leftLocked::before,
-		.carrousel .slider.rightLocked .navSliderRight,
-		.carrousel .slider.rightLocked::after{
+		#carrousel .slider.leftLocked .navSliderLeft,
+		#carrousel .slider.leftLocked::before,
+		#carrousel .slider.rightLocked .navSliderRight,
+		#carrousel .slider.rightLocked::after{
 			pointer-events: none;
 			opacity: 0;
 		}
 
-		.carrousel .navSlider svg {
+		#carrousel .navSlider svg {
 			width: 16px;
 			height: 27px;
 			margin-left: auto;
 			display: block;
 			margin-right: auto;
-            cursor: pointer;
 		}
-
-*, *:before, *:after {
-	-webkit-box-sizing: inherit;
-	-moz-box-sizing: inherit;
-	box-sizing: inherit;
 }
+
+	#carrousel {
+		padding-top: 48px;
+	}
+
+	#carrousel .navSlider {
+		display: -webkit-flex; /* NEW */
+		display: flex;
+	}
+
+	#carrousel .navSlider svg {
+			transition: transform 0.2s;
+			transition: transform 0.2s, -webkit-transform 0.2s;
+	}
+	#carrousel .navSlider:hover svg {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+
+	#carrousel .navSlider {
+			width: 80px;
+			height: 80px;
+	}
+
+	#carrousel .slider {
+		padding-left: 0;
+	}
+
+	#carrousel .slider::before,
+	#carrousel .slider::after {
+		transition: opacity 0.2s;
+		z-index: 3;
+		position: absolute;
+		content: "";
+		top: 0;
+		bottom: 0;
+		width: 277px;
+		pointer-events: none;
+	}
+
+	#carrousel .slider::before {
+		left: 0;
+		background: linear-gradient(to left, rgba(245, 240, 236,0) 0%,rgba(245, 240, 236,1) 90.25%);
+	}
+
+	#carrousel .slider::after {
+		right: 0;
+		background: linear-gradient(to right, rgba(245, 240, 236,0) 0%,rgba(245, 240, 236,1) 90.25%);
+	}
+
+	#carrousel .overflowSlider .lien:last-child {
+		margin-right: 250px;
+	}
+
+	#carrousel .lien:hover .lien__titre {
+		transform: translateY(-5px);
+	}
+
+
+
 /*-----------------------------------------------L'AGENCE-----------------------------------------------*/
 
 .hero-image-agence {
@@ -817,7 +877,7 @@ footer p{
     text-transform: uppercase;
     margin: 200px 100px 50px 100px;  
 }
-
+    
 .agence {
     height: 30%;
     padding: 0px 200px 0px 200px;
@@ -832,6 +892,7 @@ footer p{
     font-size: 24px;
     padding-bottom: 100px;
     font-weight: 300;
+    margin: 0 100px;
 }
 /*--------------------------PROFILS------------------------*/
 
@@ -870,6 +931,7 @@ footer p{
 .architecte h3 {
     text-align: end;
     margin-bottom: 30px;
+    font-size: 28px;
 }
 
 .architecte p {
@@ -899,6 +961,7 @@ footer p{
 .designer h3 {
     text-align: start;
     margin-bottom: 30px;
+    font-size: 28px;
 }
 
 .designer p {
@@ -929,6 +992,7 @@ footer p{
 .MO h3 {
     text-align: end;
     margin-bottom: 30px;
+    font-size: 28px;
 }
 
 .MO p {

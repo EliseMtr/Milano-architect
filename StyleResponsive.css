@@ -17,6 +17,7 @@
     .logo-milano{
         margin-bottom: -15px;
     } 
+
 /*---------NAVIGATION--------*/
  
    #menuToggle
@@ -65,7 +66,7 @@
   height: 3px;
   margin-bottom: 8px;
   position: relative;
-bottom: -430px;
+bottom: -470px;
   background: #dedddd;
   border-radius: 1px;
   
@@ -108,7 +109,7 @@ bottom: -430px;
     .sticky + .texte {
     padding-top: 60px;
 }
-      #menu li{
+      #menu li, .dropdown .dropbtn{
          padding-top: 50px;
     }
     
@@ -131,10 +132,9 @@ bottom: -430px;
     letter-spacing: 0.3em;
     font-size: 36px;
 }
-    .dropdown .dropbtn{
-        padding-top: 50px;
+    .dropdown .dropbtn {
+        padding-bottom: 50px;
     }
-
    .dropdown-content {
         margin-bottom: 30px;
     }
@@ -173,7 +173,45 @@ footer p{
 header{
         height: 100vh;
     }
+   
+/*---------CARROUSEL--------------*/
+
     
+#carrousel .sliderMarks {
+		display: none;
+	}
+.navSlider {
+		position: absolute;
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		padding-top: 10px;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		
+		align-items: center;
+		z-index: 4;
+	}
+		#carrousel .navSliderLeft {left: 0;}
+		#carrousel .navSliderRight {right: 0;}
+
+		#carrousel .slider.leftLocked .navSliderLeft,
+		#carrousel .slider.leftLocked::before,
+		#carrousel .slider.rightLocked .navSliderRight,
+		#carrousel .slider.rightLocked::after{
+			pointer-events: none;
+			opacity: 0;
+		}
+
+		#carrousel .navSlider svg {
+			width: 16px;
+			height: 27px;
+			margin-left: auto;
+			display: block;
+			margin-right: auto;
+		}
     /*--------------------PRESTA------------------*/
     
     h2.double{
@@ -220,13 +258,13 @@ header{
 /*---------------------REALISATIONS-----------------*/
     
     .breve__titre {
-        font-size: 48px;
+        font-size: 52px;
+        line-height: 1;
     }
     
     .realisations .breve__chapo, .design-mobilier .breve__chapo {
         font-size: 16px;
-        padding-left: 30px;
-        padding-right: 30px;
+        margin: 0 30px;
     }
     
 /*---------------------L'AGENCE----------------------*/
@@ -398,6 +436,26 @@ footer p{
 header{
         height: 100vh;
     }
+ 
+/*-----------CARROUSEL----------*/
+
+    #carrousel {
+		padding-top: 48px;
+	}
+
+	#carrousel .navSlider {
+		display: -webkit-flex; /* NEW */
+		display: flex;
+	}
+
+	#carrousel .navSlider svg {
+			transition: transform 0.2s;
+			transition: transform 0.2s, -webkit-transform 0.2s;
+	}
+	#carrousel .navSlider:hover svg {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+    }
     
 /*----------------NAVIGATION----------------*/
 
@@ -459,7 +517,7 @@ header{
   height: 3px;
   margin-bottom: 8px;
   position: relative;
-bottom: -445px;
+bottom: -485px;
   background: #dedddd;
   border-radius: 1px;
   
@@ -510,6 +568,7 @@ bottom: -445px;
         display: flex;
         flex-direction: row;
         margin-bottom: 10px;
+        margin-left: 0;
     }
     
     .liste-icon i{
@@ -533,7 +592,9 @@ bottom: -445px;
         margin-bottom: 30px;
        padding-top: 10px;
     }
-    
+    .dropdown .dropbtn {
+        padding-bottom: 50px;
+    }
      .dropdown-content a{
         padding-right: 30px;
     }
@@ -585,12 +646,12 @@ bottom: -445px;
     }
 /*---------------------REALISATIONS-----------------*/
     .breve__titre{
-        font-size: 52px;
+        font-size: 54px;
+        line-height: 1;
     }
-    .realisations .breve__chapo, .design-mobilier .breve__chapo {
+    .breve__chapo {
         font-size: 18px;
-        padding-left: 30px;
-        padding-right: 30px;
+        margin: 0 60px;
     }
 /*---------------------L'AGENCE----------------------*/
     .agence {
@@ -906,7 +967,7 @@ footer p{
   height: 3px;
   margin-bottom: 8px;
   position: relative;
-bottom: -490px;
+bottom: -475px;
   background: #dedddd;
   border-radius: 1px;
   
@@ -951,13 +1012,14 @@ bottom: -490px;
     padding-top: 60px;
 }
      #menu li{
-         padding-top: 60px;
+         padding-top: 50px;
     }
     
     #menu .liste-icon {
         display: flex;
         flex-direction: row;
         margin-bottom: 10px;
+        margin-left: 0;
     }
     
     .liste-icon i{
@@ -974,9 +1036,11 @@ bottom: -490px;
     font-size: 36px;
 }
     .dropdown .dropbtn{
-        padding-top: 60px;
+        padding-top: 50px;
     }
-
+.dropdown .dropbtn {
+        padding-bottom: 50px;
+    }
    .dropdown-content {
         margin-bottom: 30px;
        padding-top: 10px;
@@ -1034,12 +1098,13 @@ bottom: -490px;
 /*---------------------REALISATIONS-----------------*/
     
     .breve__titre{
-        font-size: 52px;
+        font-size: 54px;
+        line-height: 1;
+        margin: 0 70px;
     }
-    .realisations .breve__chapo, .design-mobilier .breve__chapo {
+    .breve__chapo {
         font-size: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin: 0 50px;
     }
 /*---------------------L'AGENCE----------------------*/
     .agence {
@@ -1266,7 +1331,7 @@ footer p{
   height: 3px;
   margin-bottom: 8px;
   position: relative;
-bottom: -440px;
+bottom: -480px;
   background: #dedddd;
   border-radius: 1px;
   
@@ -1325,6 +1390,7 @@ bottom: -440px;
     .liste-icon i{
         padding: 0 30px;
         font-size: 32px;
+        margin-left: 0;
     }
     #menu a, .dropdown .dropbtn {
     text-decoration: none;
@@ -1341,6 +1407,9 @@ bottom: -440px;
    .dropdown-content {
         margin-bottom: 30px;
        padding-top: 10px;
+    }
+    .dropdown .dropbtn {
+        padding-bottom: 50px;
     }
     
     .dropdown-content a{
@@ -1426,12 +1495,13 @@ bottom: -440px;
 /*---------------------REALISATIONS-----------------*/
     
     .breve__titre{
-        font-size: 52px;
+        font-size: 64px;
+        line-height: 1;
+        margin: 0 60px;
     }
-    .realisations .breve__chapo, .design-mobilier .breve__chapo {
+    .breve__chapo {
         font-size: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin: 0 80px;
     }
 /*---------------------L'AGENCE----------------------*/
     .agence {
