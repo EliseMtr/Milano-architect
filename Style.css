@@ -1122,3 +1122,42 @@ iframe {
     padding-top: 40px;
 }
 
+/*--------------------POLITIQUE DE CONFIDENTIALITE---------------------------*/
+
+.confidentialite {
+    margin: 0 250px;
+    text-align: justify;
+     border-color: #4c5949;
+    border-width: 10px;
+    border-style: solid;
+    padding: 250px 200px;
+    margin-top: -200px;
+}
+.politique{
+     font-family: 'rawengulksansregular';
+    letter-spacing: 0.5em;
+    font-size: 54px;
+    font-weight:300;
+    color: 2f2f2f;
+    text-align: center;
+    text-transform: uppercase; 
+    margin-top: 150px;
+}
+.confidentialite h2{
+     font-family: 'winterthurcondensedregular';
+    letter-spacing: 0.3em;
+    font-size: 32px;
+    font-weight:300;
+    color: 2f2f2f;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px 0 20px 0;
+}
+.confidentialite ul li{
+    list-style: circle;
+    margin-left: 50px;
+}
+
+.confidentialite ul{
+    padding: 20px 0 20px 0;
+}
