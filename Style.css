@@ -118,17 +118,12 @@ body,html {
     margin-right: 40px;
     margin-bottom: 105px;
 }
-.logo-milano {
+.logo-milano, .logo-milano2, .logo-milano-pro, .logo-milano-parti {
     display: flex;
     justify-content: center;
-    margin-bottom: -30px;
-    margin-right: 40px;
-}
-.logo-milano2 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: -30px;
-    margin-right: 40px;
+    margin-left: 35%;
+    width: 50%;
+    z-index: 1;
 }
 
 .Titre-header {
@@ -443,7 +438,7 @@ span.taille {
 .hero-image-presta-pro {
     background-image: url(ImagesWeb/FondPrestaProWeb.png);
     height: 100%;
-    opacity: 72%;
+    opacity: 70%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -459,6 +454,9 @@ span.taille {
 .pro .texte-design-espace{
     border-color: #bdac97;
 }
+.hero-image-presta-pro h1{
+    opacity: 100%;
+}
 .hero-image-presta-pro h2 {
     font-family: 'rawengulksansregular';
     letter-spacing: 0.5em;
@@ -468,6 +466,7 @@ span.taille {
     color: #2f2f2f;
     text-transform: uppercase; 
     line-height: 0.5;
+    opacity: 100%;
 }
 /*-----------------ARCHI-------------------*/
 
