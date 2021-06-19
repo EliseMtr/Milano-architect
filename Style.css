@@ -112,12 +112,9 @@ body,html {
 }
 /*------------------LOGO------------------*/
 
-/*--.logo-milano-pro, .logo-milano-parti {
-    display: flex;
-    justify-content: center;
-    margin-right: 40px;
-    margin-bottom: 105px;
-}--*/
+.logo-milano-pro, .logo-milano-parti {
+    margin-bottom: 12%;
+}
 .logo-milano, .logo-milano2, .logo-milano-pro, .logo-milano-parti {
     display: flex;
     justify-content: center;
