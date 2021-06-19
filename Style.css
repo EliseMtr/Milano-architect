@@ -112,24 +112,28 @@ body,html {
 }
 /*------------------LOGO------------------*/
 
-.logo-milano-pro, .logo-milano-parti {
+/*--.logo-milano-pro, .logo-milano-parti {
     display: flex;
     justify-content: center;
     margin-right: 40px;
     margin-bottom: 105px;
-}
+}--*/
 .logo-milano, .logo-milano2, .logo-milano-pro, .logo-milano-parti {
     display: flex;
     justify-content: center;
-    margin-left: 35%;
-    width: 50%;
-    z-index: 1;
+    align-items: flex-start;
+    width: 70%;
+    z-index: 6;
 }
+.logo-milano img, .logo-milano2 img, .logo-milano-pro img, .logo-milano-parti img {
+    width: 50%;}
 
 .Titre-header {
-    display: block;
-    justify-content: center;
-    margin-bottom: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    margin-top: 2%;
 }
 /*--------------------MENU------------------*/
 
@@ -360,7 +364,6 @@ flex-direction: row;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 img {
