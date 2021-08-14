@@ -11,8 +11,8 @@
 .hero-image-accueil h2{
         font-size: 22px;
     }
-.logo-milano-pro, .logo-milano-parti {
-        margin-bottom: 15%;
+.logo-milano-pro img, .logo-milano-parti img{
+        margin-bottom: 12%;
     }
 
 /*---------NAVIGATION--------*/
@@ -381,19 +381,16 @@ header{
 /*-------------------------SMARTPHONE 720PX-----------------------------*/
 @media screen and (min-width: 720px) and (max-width: 840px) {
 h1{
-        font-size: 32px;
-    }
-.presta-particulier h1, .presta-pro h1, .rea-architecture h1, .rea-design h1, .agence h1, .contact h1{
         font-size: 28px;
     }
 .Titre-header h2{
-        font-size: 30px;
+        font-size: 26px;
     }
 .hero-image-accueil h2{
         font-size: 26px;
     }
-    .logo-milano-pro, .logo-milano-parti {
-        margin-bottom: 15%;
+    .logo-milano-pro img, .logo-milano-parti img {
+        margin-bottom: 12%;
     }
 /*-------HERO-IMAGE-----*/
     
@@ -490,7 +487,7 @@ header{
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      top: 390px;
+      top: 370px;
       background: #dedddd;
       border-radius: 1px;
       
