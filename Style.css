@@ -120,7 +120,7 @@ body,html {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    z-index: 6;
+    z-index: 2;
 }
 .logo-milano img, .logo-milano2 img, .logo-milano-pro img, .logo-milano-parti img {
     width: 50%;}
