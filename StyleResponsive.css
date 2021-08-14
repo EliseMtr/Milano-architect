@@ -3,13 +3,16 @@
 
 /*----------BASE-----------*/ 
     h1{
-        font-size: 28px;
+        font-size: 20px;
     }
 .Titre-header h2{
-        font-size: 26px;
+        font-size: 22px;
     }
 .hero-image-accueil h2{
         font-size: 26px;
+    }
+.logo-milano-pro, .logo-milano-parti {
+        margin-bottom: 15%;
     }
 
 /*---------NAVIGATION--------*/
@@ -381,15 +384,17 @@ h1{
         font-size: 32px;
     }
 .presta-particulier h1, .presta-pro h1, .rea-architecture h1, .rea-design h1, .agence h1, .contact h1{
-        font-size: 32px;
+        font-size: 28px;
     }
 .Titre-header h2{
-        font-size: 32px;
+        font-size: 30px;
     }
 .hero-image-accueil h2{
-        font-size: 32px;
+        font-size: 30px;
     }
-
+    .logo-milano-pro, .logo-milano-parti {
+        margin-bottom: 15%;
+    }
 /*-------HERO-IMAGE-----*/
     
     .hero-image-rea-architecture {
