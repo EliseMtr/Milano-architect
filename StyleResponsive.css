@@ -1192,7 +1192,10 @@ bottom: -475px;
     }
     .breve__chapo {
         font-size: 20px;
-        margin: 0 50px;
+        margin: auto;
+        width: 55%;
+        padding-top: 2%;
+
     }
 /*---------------------L'AGENCE----------------------*/
     .agence {
@@ -1702,7 +1705,9 @@ bottom: -480px;
     }
     .breve__chapo {
         font-size: 20px;
-        margin: 0 80px;
+        margin: auto;
+        width: 60%;
+        padding-top: 2%;
     }
 /*---------------------L'AGENCE----------------------*/
     .agence {
