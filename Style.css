@@ -1095,9 +1095,15 @@ textarea {
 #recadrage {
     margin top: 20px;
 }
-
+.newsletters {
+    width: 50%;
+}
 #subscribeNews {
     width: 10%;
+}
+label {
+    font-family: 'winterthurcondensedregular';
+    font-size: 12px;
 }
 .bouton_ok button {
     background-color: #bdac97;
