@@ -14,11 +14,11 @@
 
 /*---------NAVIGATION--------*/
  
-   #menuToggle
+#menuToggle
 {
   display: block;
   position: fixed;
-  bottom: -110px;
+  bottom: -20px;
   left: 20px;
   width: 100%;
   
@@ -45,7 +45,7 @@
 {
   display: block;
   width: 50px;
-  height: 500px;
+  height: 600px;
   /*position: static;*/
   cursor: pointer;
   opacity: 0; 
@@ -60,11 +60,11 @@
   height: 2px;
   margin-bottom: 6px;
   position: relative;
-  bottom: -470px;
+  bottom: -560px;
   background: #dedddd;
   border-radius: 1px;
   
-    z-index: 1;}
+    z-index: 999;}
 #menu
 {
     display: flex;
@@ -455,7 +455,7 @@ header{
 {
   display: block;
   position: fixed;
-  bottom: -110px;
+  bottom: -20px;
   left: 20px;
   width: 100%;
   
@@ -482,7 +482,7 @@ header{
 {
   display: block;
   width: 50px;
-  height: 500px;
+  height: 600px;
   /*position: static;*/
   cursor: pointer;
   opacity: 0; 
@@ -497,11 +497,11 @@ header{
   height: 2px;
   margin-bottom: 6px;
   position: relative;
-  bottom: -470px;
+  bottom: -560px;
   background: #dedddd;
   border-radius: 1px;
   
-    z-index: 1;}
+    z-index: 999;}
 #menu
 {
     display: flex;
@@ -1023,13 +1023,14 @@ bottom: -475px;
         padding-top: 10px;
         font-size: 30px;
     } ----*/
+   
     /*---------NAVIGATION--------*/
  
     #menuToggle
     {
       display: block;
       position: fixed;
-      bottom: -110px;
+      bottom: -20px;
       left: 20px;
       width: 100%;
       
@@ -1056,7 +1057,7 @@ bottom: -475px;
     {
       display: block;
       width: 50px;
-      height: 500px;
+      height: 600px;
       /*position: static;*/
       cursor: pointer;
       opacity: 0; 
@@ -1071,11 +1072,11 @@ bottom: -475px;
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      bottom: -470px;
+      bottom: -560px;
       background: #dedddd;
       border-radius: 1px;
       
-        z-index: 1;}
+        z-index: 999;}
     #menu
     {
         display: flex;
@@ -1517,7 +1518,7 @@ bottom: -480px;
 {
   display: block;
   position: fixed;
-  bottom: -110px;
+  bottom: -20px;
   left: 20px;
   width: 100%;
   
@@ -1544,7 +1545,7 @@ bottom: -480px;
 {
   display: block;
   width: 50px;
-  height: 500px;
+  height: 600px;
   /*position: static;*/
   cursor: pointer;
   opacity: 0; 
@@ -1559,11 +1560,11 @@ bottom: -480px;
   height: 2px;
   margin-bottom: 6px;
   position: relative;
-  bottom: -470px;
+  bottom: -560px;
   background: #dedddd;
   border-radius: 1px;
   
-    z-index: 1;}
+    z-index: 999;}
 #menu
 {
     display: flex;
