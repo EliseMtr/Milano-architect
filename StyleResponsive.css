@@ -1020,7 +1020,6 @@ bottom: -475px;
       left: 20px;
       width: 100%;
       height: 47%;
-      z-index: 996;
       
       -webkit-user-select: none;
       user-select: none;
@@ -1047,7 +1046,6 @@ bottom: -475px;
       /*position: static;*/
       cursor: pointer;
       opacity: 0; 
-      z-index: 998; 
       -webkit-touch-callout: none;
     }
     
@@ -1060,8 +1058,7 @@ bottom: -475px;
       position: relative;
       top: 460px;
       background: #dedddd;
-      border-radius: 1px;
-        z-index: 999;}
+      border-radius: 1px;}
     #menu
     {
         display: flex;
@@ -1072,7 +1069,7 @@ bottom: -475px;
         width: 100%;
         margin: -100px 0 0 -20px;
         padding: 20px 0px 60px 0px;
-      
+      z-index: 7;
       background: #4c5949;
         opacity: 80%;
       list-style-type: none;
