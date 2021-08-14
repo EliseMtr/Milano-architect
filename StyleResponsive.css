@@ -1608,14 +1608,14 @@ bottom: -480px;
     #menu li {
         font-size: 18px;
         padding-right: 0px;
-        padding-top: 10%;
+        padding-top: 5%;
     }
     
     #menu .liste-icon {
         display: flex;
         flex-direction: row;
         margin: auto;
-        padding-top: 5%;
+        padding-top: 4%;
     }
     
     .liste-icon i{
@@ -1630,12 +1630,6 @@ bottom: -480px;
     letter-spacing: 0.3em;
     font-size: 36px;
 }
-    .dropdown .dropbtn {
-        padding-bottom: 20%;
-    }
-   .dropdown-content {
-        margin-bottom: 30px;
-    }
 
     #menu .dropdown .dropdown-content a {
         padding-right: 30px;
