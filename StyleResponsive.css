@@ -12,9 +12,11 @@
         font-size: 22px;
     }
 .logo-milano-pro img, .logo-milano-parti img{
-        margin-bottom: 12%;
+        margin-bottom: 15%;
     }
-
+.Titre-header {
+        padding-bottom: 20%;
+    }
 /*---------NAVIGATION--------*/
  
 #menuToggle
@@ -107,7 +109,7 @@
              padding: 15% 0;
         }
         #menu li {
-            font-size: 16px;
+            font-size: 12px;
             padding-right: 0px;
             padding-top: 5%;
         }
@@ -390,7 +392,10 @@ h1{
         font-size: 26px;
     }
     .logo-milano-pro img, .logo-milano-parti img {
-        margin-bottom: 12%;
+        margin-bottom: 15%;
+    }
+    .Titre-header {
+        padding-bottom: 20%;
     }
 /*-------HERO-IMAGE-----*/
     
@@ -534,7 +539,7 @@ header{
              padding: 15% 0;
         }
         #menu li {
-            font-size: 18px;
+            font-size: 14px;
             padding-right: 0px;
             padding-top: 5%;
         }
@@ -828,21 +833,23 @@ header{
 @media screen and (min-width: 841px) and (max-width: 999px) {
 
     h1{
-        font-size: 34px;
-    }
-.presta-particulier h1, .presta-pro h1, .rea-architecture h1, .rea-design h1, .agence h1, .contact h1{
-        font-size: 34px;
+        font-size: 28px;
     }
 .Titre-header h2{
-        font-size: 38px;
+        font-size: 32px;
     }
 .hero-image-accueil h2{
-        font-size: 38px;
+        font-size: 32px;
     }
 .architecture p, .design-espace p{
         font-size: 22px;
     }
-
+    .logo-milano-pro img, .logo-milano-parti img{
+        margin-bottom: 15%;
+    }
+    .Titre-header {
+        padding-bottom: 20%;
+    }
 /*-------HERO-IMAGE-----*/
     
     .hero-image-rea-architecture {
