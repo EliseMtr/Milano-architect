@@ -11,12 +11,6 @@
 .hero-image-accueil h2{
         font-size: 26px;
     }
-    .logo-milano2{
-        margin-bottom: -15px;
-    }  
-    .logo-milano{
-        margin-bottom: -15px;
-    } 
 
 /*---------NAVIGATION--------*/
  
@@ -405,14 +399,7 @@ h1{
 .hero-image-accueil h2{
         font-size: 32px;
     }
-/*--------------------HEADER--------------------*/
 
-   .logo-milano2 {
-        margin-bottom: -20px;
-    }
-    .logo-milano {
-        margin-bottom: -20px;
-    }
 /*-------HERO-IMAGE-----*/
     
     .hero-image-rea-architecture {
@@ -427,6 +414,7 @@ h1{
 .hero-image-contact{
         filter:brightness(90%)
     }
+
 /*-------------------FOOTER--------------------*/
 footer {
         padding: 30px 60px;
@@ -462,21 +450,9 @@ header{
 		transform: scale(1.2);
     }
     
-/*----------------NAVIGATION----------------*/
-
-      #menu li, .dropdown .dropbtn {
-        font-size: 14px;
-        padding-right: 15px; 
-    }
-    .dropdown {
-        padding-top: 5px;
-    }
-    .dropdown-content a {
-        font-size: 12px;
-        height: 28px;
-    }
-
-   #menuToggle
+/*---------NAVIGATION--------*/
+ 
+#menuToggle
 {
   display: block;
   position: fixed;
@@ -518,11 +494,11 @@ header{
 #menuToggle span
 {
   display: block;
-  width: 40px;
-  height: 3px;
-  margin-bottom: 8px;
+  width: 20px;
+  height: 1px;
+  margin-bottom: 5px;
   position: relative;
-bottom: -485px;
+  bottom: -470px;
   background: #dedddd;
   border-radius: 1px;
   
@@ -539,7 +515,7 @@ bottom: -485px;
     padding: 20px 0px 60px 0px;
   
   background: #4c5949;
-    opacity: 70%;
+    opacity: 80%;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
@@ -565,21 +541,25 @@ bottom: -485px;
     .sticky + .texte {
     padding-top: 60px;
 }
-     #menu li{
-         padding-top: 50px;
+   .dropdown .dropbtn{
+         padding: 15% 0;
+    }
+    #menu li {
+        font-size: 18px;
+        padding-right: 0px;
+        padding-top: 10%;
     }
     
     #menu .liste-icon {
         display: flex;
         flex-direction: row;
-        margin-bottom: 10px;
-        margin-left: 0;
+        margin: auto;
+        padding-top: 5%;
     }
     
     .liste-icon i{
         padding: 0 20px;
-        font-size: 30px;
-        margin-left: 0;
+        font-size: 24px;
     }
     #menu a, .dropdown .dropbtn {
     text-decoration: none;
@@ -589,25 +569,17 @@ bottom: -485px;
     letter-spacing: 0.3em;
     font-size: 36px;
 }
-    .dropdown .dropbtn{
-        padding-top: 50px;
+    .dropdown .dropbtn {
+        padding-bottom: 20%;
     }
-
    .dropdown-content {
         margin-bottom: 30px;
-       padding-top: 10px;
     }
-    .dropdown .dropbtn {
-        padding-bottom: 50px;
-    }
-     .dropdown-content a{
+
+    #menu .dropdown .dropdown-content a {
         padding-right: 30px;
-    }
-    
-   #menu .dropdown .dropdown-content a {
-        padding-right: 40px;
         padding-top: 10px;
-        font-size: 30px;
+        font-size: 26px;
     }
 /*--------------------PRESTA------------------*/
     
@@ -888,14 +860,7 @@ bottom: -485px;
 .architecture p, .design-espace p{
         font-size: 22px;
     }
-/*--------------------HEADER--------------------*/
 
-   .logo-milano2 {
-        margin-bottom: -17px;
-    }
-    .logo-milano {
-        margin-bottom: -17px;
-    }
 /*-------HERO-IMAGE-----*/
     
     .hero-image-rea-architecture {
@@ -923,7 +888,7 @@ footer p{
         padding-top: 30px;
     }
     
-/*----------NAVIGATION----------*/
+/*----------NAVIGATION 1-------
 
    #menuToggle
 {
@@ -958,7 +923,6 @@ footer p{
   display: block;
   width: 50px;
   height: 1000px;
-  /*position: static;*/
   cursor: pointer;
   opacity: 0; 
   z-index: 2; 
@@ -997,7 +961,7 @@ bottom: -475px;
   
  transform-origin: 0% 0%;
   transform: translate(0, 100%);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
     ul #menu {
@@ -1060,7 +1024,138 @@ bottom: -475px;
         padding-right: 30px;
         padding-top: 10px;
         font-size: 30px;
-    }
+    } ----*/
+    /*---------NAVIGATION--------*/
+ 
+   #menuToggle
+   {
+     display: block;
+     position: fixed;
+     bottom: -40px;
+     left: 20px;
+     width: 100%;
+     
+     z-index: 1;
+     
+     -webkit-user-select: none;
+     user-select: none;
+   }
+   
+   #menuToggle a
+   {
+     text-decoration: none;
+     color: #ffff;
+     
+     transition: color 0.3s ease;
+   }
+   
+   #menuToggle a:hover
+   {
+     color: #bdac97;
+   }
+   
+   #menuToggle input
+   {
+     display: block;
+     width: 50px;
+     height: 1000px;
+     /*position: static;*/
+     cursor: pointer;
+     opacity: 0; 
+     z-index: 2; 
+     -webkit-touch-callout: none;
+   }
+   
+   #menuToggle span
+   {
+     display: block;
+     width: 30px;
+     height: 2px;
+     margin-bottom: 6px;
+     position: relative;
+     bottom: -470px;
+     background: #dedddd;
+     border-radius: 1px;
+     
+       z-index: 1;}
+   #menu
+   {
+       display: flex;
+       justify-content: flex-start;
+       flex-direction: column;
+       align-items: center;
+       flex-wrap: wrap;
+       width: 100%;
+       margin: -100px 0 0 -20px;
+       padding: 20px 0px 60px 0px;
+     
+     background: #4c5949;
+       opacity: 80%;
+     list-style-type: none;
+     -webkit-font-smoothing: antialiased;
+   
+     
+    transform-origin: 0% 0%;
+     transform: translate(0, 100%);
+     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
+   }
+   
+       ul #menu {
+           padding-right: 40px;
+       }
+       #menuToggle input:checked ~ ul{
+     transform: none;
+   }
+   
+       .sticky {
+       position: fixed;
+       top: 0;
+       width: 100%;
+   }
+   
+       .sticky + .texte {
+       padding-top: 60px;
+   }
+      .dropdown .dropbtn{
+            padding: 15% 0;
+       }
+       #menu li {
+           font-size: 20px;
+           padding-right: 0px;
+           padding-top: 10%;
+       }
+       
+       #menu .liste-icon {
+           display: flex;
+           flex-direction: row;
+           margin: auto;
+           padding-top: 5%;
+       }
+       
+       .liste-icon i{
+           padding: 0 20px;
+           font-size: 24px;
+       }
+       #menu a, .dropdown .dropbtn {
+       text-decoration: none;
+       list-style: none;
+       text-transform: uppercase;
+       font-family: 'winterthurcondensedregular';
+       letter-spacing: 0.3em;
+       font-size: 36px;
+   }
+       .dropdown .dropbtn {
+           padding-bottom: 20%;
+       }
+      .dropdown-content {
+           margin-bottom: 30px;
+       }
+   
+       #menu .dropdown .dropdown-content a {
+           padding-right: 30px;
+           padding-top: 10px;
+           font-size: 26px;
+       }
 /*--------------------PRESTA------------------*/
     
     h2.double{
@@ -1254,14 +1349,6 @@ bottom: -475px;
     .designer {
         margin: 80px 50px 40px 40px;
     }
-/*--------------------HEADER--------------------*/
-
-   .logo-milano2 {
-        margin-bottom: -17px;
-    }
-    .logo-milano {
-        margin-bottom: -17px;
-    }
 /*-------HERO-IMAGE-----*/
     
     .hero-image-rea-architecture {
@@ -1288,7 +1375,7 @@ footer p{
         font-size: 10px;
         padding-top: 30px;
     }
-/*------------------------NAVIGATION-----------------------*/
+/*------------------------NAVIGATION----------------
 
    #menuToggle
 {
@@ -1322,7 +1409,6 @@ footer p{
   display: block;
   width: 50px;
   height: 1000px;
-  /*position: static;*/
   cursor: pointer;
   opacity: 0; 
   z-index: 2; 
@@ -1361,7 +1447,7 @@ bottom: -480px;
   
  transform-origin: 0% 0%;
   transform: translate(0, 100%);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
     ul #menu {
@@ -1426,7 +1512,139 @@ bottom: -480px;
         padding-right: 30px;
         padding-top: 10px;
         font-size: 32px;
-    }
+    }    ----*/
+
+    /*---------NAVIGATION--------*/
+ 
+   #menuToggle
+   {
+     display: block;
+     position: fixed;
+     bottom: -40px;
+     left: 20px;
+     width: 100%;
+     
+     z-index: 1;
+     
+     -webkit-user-select: none;
+     user-select: none;
+   }
+   
+   #menuToggle a
+   {
+     text-decoration: none;
+     color: #ffff;
+     
+     transition: color 0.3s ease;
+   }
+   
+   #menuToggle a:hover
+   {
+     color: #bdac97;
+   }
+   
+   #menuToggle input
+   {
+     display: block;
+     width: 50px;
+     height: 1000px;
+     /*position: static;*/
+     cursor: pointer;
+     opacity: 0; 
+     z-index: 2; 
+     -webkit-touch-callout: none;
+   }
+   
+   #menuToggle span
+   {
+     display: block;
+     width: 30px;
+     height: 2px;
+     margin-bottom: 6px;
+     position: relative;
+     bottom: -470px;
+     background: #dedddd;
+     border-radius: 1px;
+     
+       z-index: 1;}
+   #menu
+   {
+       display: flex;
+       justify-content: flex-start;
+       flex-direction: column;
+       align-items: center;
+       flex-wrap: wrap;
+       width: 100%;
+       margin: -100px 0 0 -20px;
+       padding: 20px 0px 60px 0px;
+     
+     background: #4c5949;
+       opacity: 80%;
+     list-style-type: none;
+     -webkit-font-smoothing: antialiased;
+   
+     
+    transform-origin: 0% 0%;
+     transform: translate(0, 100%);
+     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);*/
+   }
+   
+       ul #menu {
+           padding-right: 40px;
+       }
+       #menuToggle input:checked ~ ul{
+     transform: none;
+   }
+   
+       .sticky {
+       position: fixed;
+       top: 0;
+       width: 100%;
+   }
+   
+       .sticky + .texte {
+       padding-top: 60px;
+   }
+      .dropdown .dropbtn{
+            padding: 15% 0;
+       }
+       #menu li {
+           font-size: 22px;
+           padding-right: 0px;
+           padding-top: 10%;
+       }
+       
+       #menu .liste-icon {
+           display: flex;
+           flex-direction: row;
+           margin: auto;
+           padding-top: 5%;
+       }
+       
+       .liste-icon i{
+           padding: 0 20px;
+           font-size: 24px;
+       }
+       #menu a, .dropdown .dropbtn {
+       text-decoration: none;
+       list-style: none;
+       text-transform: uppercase;
+       font-family: 'winterthurcondensedregular';
+       letter-spacing: 0.3em;
+       font-size: 36px;
+   }
+       .dropdown .dropbtn {
+           padding-bottom: 20%;
+       }
+      .dropdown-content {
+           margin-bottom: 30px;
+       }
+   
+       #menu .dropdown .dropdown-content a {
+           padding-right: 30px;
+           padding-top: 10px;
+           font-size: 26px;
+       }
 /*-------------CARROUSEL----------------*/
     
 	.carrousel .navSlider {
