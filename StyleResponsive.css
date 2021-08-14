@@ -109,8 +109,13 @@ bottom: -470px;
     .sticky + .texte {
     padding-top: 60px;
 }
-      #menu li, .dropdown .dropbtn{
-         padding-top: 50px;
+   .dropdown .dropbtn{
+         padding: 15% 0;
+    }
+    #menu li {
+        font-size: 18px;
+        padding-right: 0px;
+        padding-top: 10%;
     }
     
     #menu .liste-icon {
@@ -133,7 +138,7 @@ bottom: -470px;
     font-size: 36px;
 }
     .dropdown .dropbtn {
-        padding-bottom: 50px;
+        padding-bottom: 20%;
     }
    .dropdown-content {
         margin-bottom: 30px;
