@@ -62,9 +62,9 @@
 #menuToggle span
 {
   display: block;
-  width: 40px;
-  height: 3px;
-  margin-bottom: 8px;
+  width: 20px;
+  height: 1px;
+  margin-bottom: 5px;
   position: relative;
   bottom: -470px;
   background: #dedddd;
@@ -83,7 +83,7 @@
     padding: 20px 0px 60px 0px;
   
   background: #4c5949;
-    opacity: 70%;
+    opacity: 80%;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
