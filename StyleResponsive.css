@@ -9,7 +9,7 @@
         font-size: 22px;
     }
 .hero-image-accueil h2{
-        font-size: 26px;
+        font-size: 22px;
     }
 .logo-milano-pro, .logo-milano-parti {
         margin-bottom: 15%;
@@ -60,7 +60,7 @@
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      top: 360px;
+      top: 350px;
       background: #dedddd;
       border-radius: 1px;
       
@@ -107,7 +107,7 @@
              padding: 15% 0;
         }
         #menu li {
-            font-size: 18px;
+            font-size: 16px;
             padding-right: 0px;
             padding-top: 5%;
         }
@@ -390,7 +390,7 @@ h1{
         font-size: 30px;
     }
 .hero-image-accueil h2{
-        font-size: 30px;
+        font-size: 26px;
     }
     .logo-milano-pro, .logo-milano-parti {
         margin-bottom: 15%;
