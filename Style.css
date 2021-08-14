@@ -1044,7 +1044,8 @@ form {
     flex-direction: row-reverse;
     justify-content: center;
     text-align: center;
-    margin: 300px 0px 150px 0px;
+    margin-top: 10%;
+    margin-bottom: 5%; 
 }
 
 .coordonnees p {
