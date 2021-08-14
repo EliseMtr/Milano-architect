@@ -57,7 +57,7 @@
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      top: 440px;
+      top: 420px;
       background: #dedddd;
       border-radius: 1px;
       
@@ -485,7 +485,7 @@ header{
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      top: 440px;
+      top: 470px;
       background: #dedddd;
       border-radius: 1px;
       
@@ -1050,7 +1050,7 @@ bottom: -475px;
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      top: 440px;
+      top: 430px;
       background: #dedddd;
       border-radius: 1px;
       
@@ -1532,7 +1532,7 @@ bottom: -480px;
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      top: 440px;
+      top: 450px;
       background: #dedddd;
       border-radius: 1px;
       
@@ -1809,4 +1809,20 @@ bottom: -480px;
         width: 70%
     }
 
+}
+
+/*----------------------- MEDIA 1150 À 1300---------------------*/
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+#menuToggle span
+{
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin-bottom: 6px;
+  position: relative;
+  top: 480px;
+  background: #dedddd;
+  border-radius: 1px;
+  
+    z-index: 1;}
 }
