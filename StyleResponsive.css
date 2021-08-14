@@ -209,15 +209,15 @@ header{
     /*--------------------PRESTA------------------*/
     
     h2.double{
-        font-size:70px;
+        font-size:40px;
         margin-bottom: 5px;
     }
     span.taille{
-        font-size: 42px;
+        font-size: 28px;
         margin-left: 90px;
     }
     .architecture h2{
-       line-height: 0.43;
+       line-height: 0.34;
     }
     .design-espace h2{
         margin-left: 90px;
@@ -238,7 +238,7 @@ header{
         border-width: 7px;
     }
     .architecture p, .design-espace p{
-        font-size: 24px;
+        font-size: 16px;
     }
     .architecture h3, .design-espace h3{
         font-size: 28px;
