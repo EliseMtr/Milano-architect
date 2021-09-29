@@ -28,7 +28,6 @@
       width: 100%;
       -webkit-user-select: none;
       user-select: none;
-      z-index: 1;
     }
     
     #menuToggle a
@@ -51,7 +50,6 @@
       height: 500px;
       cursor: pointer;
       opacity: 0; 
-      z-index: 2;
       -webkit-touch-callout: none;
     }
     
@@ -62,11 +60,10 @@
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      top: 340px;
+      top: 360px;
       background: #dedddd;
       border-radius: 1px;
-      
-        z-index: 1;}
+    }
     #menu
     {
         display: flex;
@@ -458,7 +455,6 @@ header{
       width: 100%;
       -webkit-user-select: none;
       user-select: none;
-      z-index: 1;
     }
     
     #menuToggle a
@@ -481,7 +477,6 @@ header{
       height: 500px;
       cursor: pointer;
       opacity: 0; 
-      z-index: 2;
       -webkit-touch-callout: none;
     }
     
@@ -492,7 +487,7 @@ header{
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      top: 360px;
+      top: 380px;
       background: #dedddd;
       border-radius: 1px;
       
@@ -1025,7 +1020,6 @@ bottom: -475px;
       width: 100%;
       -webkit-user-select: none;
       user-select: none;
-      z-index: 1;
     }
     
     #menuToggle a
@@ -1048,7 +1042,6 @@ bottom: -475px;
       height: 500px;
       cursor: pointer;
       opacity: 0; 
-      z-index: 2;
       -webkit-touch-callout: none;
     }
     
@@ -1059,11 +1052,10 @@ bottom: -475px;
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      top: 455px;
+      top: 475px;
       background: #dedddd;
-      border-radius: 1px;
-      
-        z-index: 1;}
+      border-radius: 1px;}
+
     #menu
     {
         display: flex;
@@ -1507,7 +1499,6 @@ bottom: -480px;
       width: 100%;
       -webkit-user-select: none;
       user-select: none;
-      z-index: 1;
     }
     
     #menuToggle a
@@ -1530,7 +1521,6 @@ bottom: -480px;
       height: 500px;
       cursor: pointer;
       opacity: 0; 
-      z-index: 2;
       -webkit-touch-callout: none;
     }
     
@@ -1541,11 +1531,10 @@ bottom: -480px;
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      top: 510px;
+      top: 530px;
       background: #dedddd;
       border-radius: 1px;
-      
-        z-index: 1;}
+    }
     #menu
     {
         display: flex;
@@ -1831,7 +1820,5 @@ bottom: -480px;
   position: relative;
   top: 500px;
   background: #dedddd;
-  border-radius: 1px;
-  
-    z-index: 1;}
+  border-radius: 1px;}
 }
