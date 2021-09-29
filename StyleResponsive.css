@@ -206,6 +206,7 @@ header{
     h2.double{
         font-size:40px;
         margin-bottom: 5px;
+        margin-left: -20px;
     }
     span.taille{
         font-size: 28px;
@@ -567,6 +568,7 @@ header{
     h2.double{
         font-size:74px;
         margin-bottom: 2px;
+        margin-left: -20px;
     }
     span.taille{
         font-size: 46px;
@@ -1131,6 +1133,7 @@ bottom: -475px;
     
     h2.double{
         font-size:84px;
+        margin-left: -20px;
     }
     span.taille{
         font-size: 56px;
@@ -1641,6 +1644,7 @@ bottom: -480px;
     
     h2.double{
         font-size:84px;
+        margin-left: -20px;
     }
     span.taille{
         font-size: 56px;
