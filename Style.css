@@ -145,7 +145,7 @@ body,html {
   left: 15px;
   width: 100%;
   
-  z-index: 1;
+  z-index: 5;
   
   -webkit-user-select: none;
   user-select: none;
@@ -177,7 +177,7 @@ body,html {
   cursor: pointer;
   
   opacity: 0; 
-  z-index: 2; 
+  z-index: 201; 
   
   -webkit-touch-callout: none;
 }
@@ -193,7 +193,7 @@ body,html {
   background: #cbc5c5;
   border-radius: 3px;
   
-    z-index: 1; }
+    z-index: 200; }
   
 /*  transform-origin: 4px 0px;
   
@@ -240,7 +240,7 @@ body,html {
     margin: -100px 0 0 -20px;
     padding: 0 40px 40px 50px;
   padding-top: 40px;
-  
+  z-index: 900;
   background: #4c5949;
     opacity: 70%;
   list-style-type: none;
