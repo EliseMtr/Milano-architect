@@ -1050,7 +1050,7 @@ bottom: -475px;
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      /*top: 575px;*/
+      top: 50%;
       background: #dedddd;
       border-radius: 1px;}
 
