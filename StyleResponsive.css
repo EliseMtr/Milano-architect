@@ -378,7 +378,7 @@ header{
 /*-------------------------SMARTPHONE 720PX-----------------------------*/
 @media screen and (min-width: 720px) and (max-width: 840px) {
 h1{
-        font-size: 28px;
+        font-size: 22px;
     }
 .Titre-header h2{
         font-size: 26px;
@@ -1308,7 +1308,7 @@ bottom: -475px;
         font-size: 44px;
     }
     h1{
-        font-size: 36px;
+        font-size: 30px;
     }
     .presta-particulier h1, .presta-pro h1, .rea-architecture h1, .rea-design h1, .agence h1, .contact h1{
         font-size: 36px;
