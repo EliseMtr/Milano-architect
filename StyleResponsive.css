@@ -485,7 +485,8 @@ header{
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      top: 680px;
+      bottom: -500px;
+      /*top:340px*/
       background: #dedddd;
       border-radius: 1px;
       
@@ -1050,7 +1051,8 @@ bottom: -475px;
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      top: 800px;
+      bottom: -500px;
+      /*top: 375px;*/
       background: #dedddd;
       border-radius: 1px;}
 
