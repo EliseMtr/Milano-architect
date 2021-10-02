@@ -60,7 +60,7 @@
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      margin-top: 460px;
+      top: 460px;
       background: #dedddd;
       border-radius: 1px;
     }
@@ -486,7 +486,7 @@ header{
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      margin-top:340px;
+      top:340px;
       background: #dedddd;
       border-radius: 1px;
       
@@ -1052,7 +1052,7 @@ bottom: -475px;
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      margin-top: 375px;
+      top: 375px;
       background: #dedddd;
       border-radius: 1px;}
 
@@ -1532,7 +1532,7 @@ bottom: -480px;
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      margin-top: 630px;
+      top: 430px;
       background: #dedddd;
       border-radius: 1px;
     }
@@ -1820,7 +1820,7 @@ bottom: -480px;
   height: 2px;
   margin-bottom: 6px;
   position: relative;
-  margin-top: 600px;
+  top: 460px;
   background: #dedddd;
   border-radius: 1px;}
 }
