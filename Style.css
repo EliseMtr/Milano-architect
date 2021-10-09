@@ -411,9 +411,8 @@ span.taille {
 /*-----------------------------PARTICULIER-------------------------------*/
 
 .hero-image-presta-particulier {
-    background-image: url(ImagesWeb/FondParticulierWeb.png);
+    background-image: url(ImagesWeb/FondParticulierWeb2.png);
     height: 100vh;
-    opacity: 72%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -441,7 +440,7 @@ span.taille {
 .hero-image-presta-pro {
     background-image: url(ImagesWeb/FondPrestaProWeb.png);
     height: 100%;
-    opacity: 70%;
+    opacity: 75%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -874,9 +873,9 @@ footer p{
 /*---------------------------------MAIN----------------------------------*/
 .agence h2{
     font-size: 48px;
-    font-family: 'winterthurcondensedregular';
+    font-family: 'rawengulksansregular';
     text-transform: uppercase;
-    padding-top: 10%;
+    padding: 10% 0 2% 0;
 }
     
 .agence {

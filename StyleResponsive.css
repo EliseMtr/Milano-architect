@@ -1,18 +1,69 @@
 /*------------------------SMARTPHONE---------------------------------*/
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 425px) {
+    .presta-particulier h2, .hero-image-presta-pro h2 {
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .design-espace h2 {
+        margin-left: 50px;
+    }
+    .breve__titre {
+        font-size: 28px;
+        line-height: 1;
+    }
+    .agence h2 {
+        font-size: 26px;
+        margin-top: 50px;
+        padding-bottom: 20px;
+    }
+    .architecte img, .designer img, .MO img {
+        max-width: 350px;
+        height: auto;
+    }
+    .designer h3, .architecte h3, .MO h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .designer p, .architecte p, .MO p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .architecte i, .designer i, .MO i {
+        color: #bdac97;
+        font-size: 28px;
+    }
+    footer h4 {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 719px) {  
+
+    .design-espace h2 {
+        margin-left: 50px;
+    }
+    .breve__titre {
+        font-size: 26px !important;
+        line-height: 1;
+    }
+    .agence h2 {
+        font-size: 26px;
+        margin-top: 50px;
+        padding-bottom: 20px;
+    }
+    footer h4 {
+        font-size: 10px;
+    }
 
 /*----------BASE-----------*/ 
     h1{
         font-size: 20px;
+        padding-top: 20px;
     }
 .Titre-header h2{
-        font-size: 22px;
+        font-size: 18px;
     }
 .hero-image-accueil h2{
-        font-size: 22px;
-    }
-.logo-milano-pro img, .logo-milano-parti img{
-        margin-bottom: 15%;
+        font-size: 18px;
     }
 .Titre-header {
         padding-bottom: 20%;
@@ -60,7 +111,7 @@
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      margin-top: 460px;
+      top: 405px;
       background: #dedddd;
       border-radius: 1px;
     }
@@ -128,10 +179,13 @@
         letter-spacing: 0.3em;
         font-size: 36px;
     }
-    
+        .dropdown:hover .dropdown-content {
+        margin-left: -13%;
+    }
         #menu .dropdown .dropdown-content a {
             padding-right: 30px;
-            font-size: 26px;
+            padding-top: 5px;
+            font-size: 22px;
         }
 /*-------HERO-IMAGE-----*/
     
@@ -202,11 +256,17 @@ header{
 			margin-right: auto;
 		}
     /*--------------------PRESTA------------------*/
-    
+    .logo-milano-pro, .logo-milano-parti {
+        margin-bottom: 2%;
+    }
+    .presta-particulier h2, .hero-image-presta-pro h2 {
+        font-size: 18px;
+        margin-top: 0;
+    }
     h2.double{
         font-size:40px;
         margin-bottom: 5px;
-        margin-left: -20px;
+        margin-left: 20px;
     }
     span.taille{
         font-size: 28px;
@@ -215,8 +275,8 @@ header{
     .architecture h2{
        line-height: 0.47;
     }
-    .design-espace h2{
-        margin-left: 90px;
+    .design-espace h2 {
+        margin-left: 50px;
         line-height: 0.43;
     }
     .design-espace{
@@ -247,28 +307,39 @@ header{
     }
 /*---------------------REALISATIONS-----------------*/
     
-    .breve__titre {
-        font-size: 52px;
-        line-height: 1;
-    }
-    
     .realisations .breve__chapo, .design-mobilier .breve__chapo {
-        font-size: 16px;
+        font-size: 16px !important;
         margin: 0 30px;
     }
     
 /*---------------------L'AGENCE----------------------*/
+    .architecte img, .designer img, .MO img {
+        max-width: 350px;
+        height: auto;
+    }
+    .designer h3, .architecte h3, .MO h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .designer p, .architecte p, .MO p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .architecte i, .designer i, .MO i {
+        color: #bdac97;
+        font-size: 28px;
+    }
     .agence {
         padding: 0 20px 0 20px;   
     }
     
     .agence h2{
-        font-size: 34px;
+        font-size: 28px;
     }
     .agence p {
         padding-bottom: 20px;
         margin: 0 50px;
-        font-size: 20px;
+        font-size: 16px;
     }
     #notre-agence{
         text-align: center;
@@ -280,6 +351,7 @@ header{
         display: block;
         justify-content: center;
     }
+    
     .architecte .description, .designer .description, .MO .description{
         display: block;
         justify-content: center;
@@ -287,23 +359,10 @@ header{
         padding-top: 20px;
         margin: inherit;
     }
-    .architecte img, .designer img, .MO img {
-        max-width: 400px;
-        height: auto;
-    }
     
     .architecte img:hover , .designer img:hover, .MO img:hover{
         background-color: #fff;
         opacity: 70%;
-    }
-    
-    .designer h3, .architecte h3, .MO h3 {
-        font-size: 28px;
-        text-align: center;
-    }
-    .designer p, .architecte p, .MO p {
-        font-size: 18px;
-        text-align: center;
     }
     .designer .description .fab,.architecte .description .fab, .MO .description .fab {
        padding: 20px 20px 40px 0;
@@ -380,15 +439,13 @@ header{
 @media screen and (min-width: 720px) and (max-width: 840px) {
 h1{
         font-size: 22px;
+        padding-top: 20px;
     }
 .Titre-header h2{
-        font-size: 26px;
+        font-size: 20px;
     }
 .hero-image-accueil h2{
-        font-size: 26px;
-    }
-    .logo-milano-pro img, .logo-milano-parti img {
-        margin-bottom: 15%;
+        font-size: 20px;
     }
     .Titre-header {
         padding-bottom: 20%;
@@ -486,8 +543,7 @@ header{
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      bottom: -500px;
-      margin-top:340px;
+      top: 520px;
       background: #dedddd;
       border-radius: 1px;
       
@@ -564,11 +620,13 @@ header{
             font-size: 26px;
         }
 /*--------------------PRESTA------------------*/
-    
+    .logo-milano-pro, .logo-milano-parti {
+         margin-bottom: 17%;
+    }
     h2.double{
         font-size:74px;
         margin-bottom: 2px;
-        margin-left: -40px;
+        margin-left: 20px;
     }
     span.taille{
         font-size: 46px;
@@ -606,7 +664,7 @@ header{
     }
 /*---------------------REALISATIONS-----------------*/
     .breve__titre{
-        font-size: 54px;
+        font-size: 28px;
         line-height: 1;
     }
     .breve__chapo {
@@ -742,14 +800,14 @@ header{
 	}
 
 	.carrousel .breve__titre {
-		font-size: 38px;
+		font-size: 30px;
 		letter-spacing: 3em;
 		font-weight: 400;
 		text-align: center;
         padding-bottom: 30px;
 	}
     .carrousel .breve__titre-espace{
-        font-size: 38px;
+        font-size: 30px;
 		letter-spacing: 3em;
 		font-weight: 400;
 		text-align: center;
@@ -832,16 +890,13 @@ header{
         font-size: 22px;
     }
 .Titre-header h2{
-        font-size: 32px;
+        font-size: 26px;
     }
 .hero-image-accueil h2{
-        font-size: 32px;
+        font-size: 26px;
     }
 .architecture p, .design-espace p{
-        font-size: 22px;
-    }
-    .logo-milano-pro img, .logo-milano-parti img{
-        margin-bottom: 15%;
+        font-size: 18px;
     }
     .Titre-header {
         padding-bottom: 20%;
@@ -1053,8 +1108,7 @@ bottom: -475px;
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      bottom: -500px;
-      margin-top: 375px;
+      top: 475px;
       background: #dedddd;
       border-radius: 1px;}
 
@@ -1130,13 +1184,15 @@ bottom: -475px;
             font-size: 26px;
         }
 /*--------------------PRESTA------------------*/
-    
+    .logo-milano-pro, .logo-milano-parti {
+    margin-bottom: 17%;
+    }
     h2.double{
-        font-size:84px;
+        font-size:64px;
         margin-left: -40px;
     }
     span.taille{
-        font-size: 56px;
+        font-size: 46px;
         margin-left: 110px;
     }
     .architecture h2{
@@ -1172,7 +1228,7 @@ bottom: -475px;
 /*---------------------REALISATIONS-----------------*/
     
     .breve__titre{
-        font-size: 54px;
+        font-size: 32px;
         line-height: 1;
         margin: 0 70px;
     }
@@ -1534,7 +1590,7 @@ bottom: -480px;
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      margin-top: 630px;
+      top: 450px;
       background: #dedddd;
       border-radius: 1px;
     }
@@ -1683,7 +1739,7 @@ bottom: -480px;
 /*---------------------REALISATIONS-----------------*/
     
     .breve__titre{
-        font-size: 64px;
+        font-size: 34px;
         line-height: 1;
         margin: 0 60px;
     }
@@ -1822,7 +1878,7 @@ bottom: -480px;
   height: 2px;
   margin-bottom: 6px;
   position: relative;
-  margin-top: 600px;
+  top: 460px;
   background: #dedddd;
   border-radius: 1px;}
 }
