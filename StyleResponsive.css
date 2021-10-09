@@ -542,7 +542,7 @@ header{
       height: 2px;
       margin-bottom: 6px;
       position: relative;
-      top: 520px;
+      top: 450px;
       background: #dedddd;
       border-radius: 1px;
       
@@ -591,7 +591,7 @@ header{
         #menu li {
             font-size: 14px;
             padding-right: 0px;
-            padding-top: 10%;
+            padding-top: 7%;
         }
         
         #menu .liste-icon {
